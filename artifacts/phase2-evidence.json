@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "capture_utc": "2026-10-30T13:22:51.882286+00:00",
+  "scope": "read-only static phase-2 supplement; no vendor import/execution",
+  "files": {
+    "mlir-aie.pth": {
+      "source": "<WORKSPACE>/mlir-aie/ironenv/lib/python3.14/site-packages/mlir-aie.pth",
+      "sha256": "2c084c0f8b3f6d223bac38ab588defe3fbbe9679e169e794cefdc2e90cf27d45",
+      "size_bytes": 87,
+      "text": "<WORKSPACE>/mlir-aie/ironenv/lib/python3.14/site-packages/mlir_aie/python\n",
+      "id": "P2-F002",
+      "mtime_utc": "2026-10-30T10:16:29.777868+00:00"
+    },
+    "pyxrt.cpython-314-x86_64-linux-gnu.so": {
+      "source": "<WORKSPACE>/mlir-aie/ironenv/lib/python3.14/site-packages/pyxrt.cpython-314-x86_64-linux-gnu.so",
+      "sha256": "5b42e51173c97ffbc54dd4378181e14177a42b6b86343bdc76141fde3fd94b7d",
+      "size_bytes": 670376,
+      "symlink_target": "/usr/lib/python3/dist-packages/pyxrt.cpython-314-x86_64-linux-gnu.so",
+      "id": "P2-F007",
+      "mtime_utc": "2026-03-20T11:31:19+00:00"
+    },
+    "peano-requirements.txt": {
+      "source": "<WORKSPACE>/mlir-aie/utils/peano-requirements.txt",
+      "sha256": "3d6ae339be94622ffe47788d703185821408ba513ed55701a996e0ca30bd1d65",
+      "size_bytes": 428,
+      "text": "# Pinned llvm-aie (Peano) nightly, installed at every IRON/CI setup site via\n# `pip install -r`. The version line is bumped automatically by the update-peano\n# workflow (utils/update_peano_version.py) so a bad nightly is caught in a PR\n# instead of breaking main. Mirrors the eudsl pin style in python/requirements.txt.\n-f https://github.com/Xilinx/llvm-aie/releases/expanded_assets/nightly\nllvm-aie==22.0.0.2026102001+4f5df13d\n",
+      "id": "P2-F006",
+      "mtime_utc": "2026-10-30T10:03:28.347940+00:00"
+    },
+    "requirements.txt": {
+      "source": "<WORKSPACE>/mlir-aie/python/requirements.txt",
+      "sha256": "9e31e52d0eada8f73a0bc3b936b9fab451810d5c4d4c68770790b993fc99c34e",
+      "size_bytes": 414,
+      "text": "numpy>=1.26,<2.3; python_version < \"3.11\"\nnumpy>=2.4.6,<2.5; python_version == \"3.11\"\nnumpy>=2.5.3,<3.0; python_version >= \"3.12\"\nml_dtypes>=0.6.0\ntyping_extensions>=4.1; python_version < \"3.11\"\ncloudpickle # required by eudsl when it is vendored instead of installed\n-f https://llvm.github.io/eudsl\neudsl-python-extras==0.1.0.20261001.532+c60cea4 \\\n  --config-settings=EUDSL_PYTHON_EXTRAS_HOST_PACKAGE_PREFIX=aie\n",
+      "id": "P2-F008",
+      "mtime_utc": "2026-10-30T10:03:28.272644+00:00"
+    },
+    "onnxruntime_c_api.h": {
+      "source": "<WORKSPACE>/ryzen-ai-1.8.0/cpp-test/include/onnxruntime_c_api.h",
+      "sha256": "c4ed26d7bbc7b649c1c38622424d88dfb1a28e3d3594c5f1456cf458814e8381",
+      "size_bytes": 392016,
+      "id": "P2-F004",
+      "mtime_utc": "2026-10-30T11:11:01.201677+00:00"
+    },
+    "onnxruntime_ep_c_api.h": {
+      "source": "<WORKSPACE>/ryzen-ai-1.8.0/cpp-test/include/onnxruntime_ep_c_api.h",
+      "sha256": "f65ac849718cabe3ff4902698dd2de643c3b3dbe0010242b2b0407548e7ee00c",
+      "size_bytes": 149810,
+      "id": "P2-F005",
+      "mtime_utc": "2026-10-30T11:12:11.713687+00:00"
+    },
+    "mlir_aie-WHEEL": {
+      "source": "<WORKSPACE>/mlir-aie/ironenv/lib/python3.14/site-packages/mlir_aie-1.4.5.dev113+ge28f6dc.dist-info/WHEEL",
+      "sha256": "a7c21393da9584d268e233abf45e421ca43eec411af443eef86920aa37c4528f",
+      "size_bytes": 113,
+      "text": "Wheel-Version: 1.0\nGenerator: setuptools (84.0.0)\nRoot-Is-Purelib: false\nTag: cp314-cp314-manylinux_2_35_x86_64\n\n",
+      "id": "P2-F003",
+      "mtime_utc": "2026-10-30T10:16:28.282641+00:00"
+    },
+    "llvm_aie-WHEEL": {
+      "source": "<WORKSPACE>/mlir-aie/ironenv/lib/python3.14/site-packages/llvm_aie-22.0.0.2026102001+4f5df13d.dist-info/WHEEL",
+      "sha256": "185286d3321a818bdba68411ba1f9620b1f5f9fde935901baa4a2b908a35e749",
+      "size_bytes": 152,
+      "text": "Wheel-Version: 1.0\nGenerator: setuptools (84.2.0)\nRoot-Is-Purelib: false\nTag: cp310-cp310-manylinux_2_27_x86_64\nTag: cp310-cp310-manylinux_2_28_x86_64\n\n",
+      "id": "P2-F001",
+      "mtime_utc": "2026-10-30T10:15:58.576597+00:00"
+    }
+  },
+  "xrt_packages": {
+    "xrt_202620.2.25.37_24.04-amd64-base-dev.deb": {
+      "control": [
+        "Package: xrt-base-dev",
+        "Version: 2.25.37",
+        "Architecture: amd64",
+        "Depends: xrt-base (= 2.25.37), ocl-icd-opencl-dev (>= 2.2.0), uuid-dev (>= 2.27.1)"
+      ],
+      "runtime_members": [
+        "opt/xilinx/xrt/lib/libxrt_core.so -> libxrt_core.so.2",
+        "opt/xilinx/xrt/lib/libxrt_coreutil.so -> libxrt_coreutil.so.2"
+      ]
+    },
+    "xrt_202620.2.25.37_24.04-amd64-base.deb": {
+      "control": [
+        "Package: xrt-base",
+        "Version: 2.25.37",
+        "Architecture: amd64",
+        "Depends: ocl-icd-libopencl1 (>= 2.2.0), python3, libboost-filesystem1.83.0 (>= 1.83.0), libboost-program-options1.83.0 (>= 1.83.0), libc6 (>= 2.38), libgcc-s1 (>= 3.4), libssl3t64 (>= 3.0.0), libstdc++6 (>= 12), libuuid1 (>= 2.16)"
+      ],
+      "runtime_members": [
+        "opt/xilinx/xrt/lib/libxrt_core.so.2 -> libxrt_core.so.2.25.37",
+        "opt/xilinx/xrt/lib/libxrt_core.so.2.25.37",
+        "opt/xilinx/xrt/lib/libxrt_coreutil.so.2 -> libxrt_coreutil.so.2.25.37",
+        "opt/xilinx/xrt/lib/libxrt_coreutil.so.2.25.37",
+        "opt/xilinx/xrt/version.json"
+      ]
+    },
+    "xrt_202620.2.25.37_24.04-amd64-npu.deb": {
+      "control": [
+        "Package: xrt-npu",
+        "Version: 2.25.37",
+        "Architecture: amd64",
+        "Depends: xrt-base (= 2.25.37), libc6 (>= 2.38), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), libuuid1 (>= 2.16)"
+      ],
+      "runtime_members": []
+    },
+    "xrt_plugin.2.25.260102.56.release_24.04-amd64-amdxdna.deb": {
+      "control": [
+        "Package: xrt_plugin-amdxdna",
+        "Version: 2.25",
+        "Architecture: amd64",
+        "Depends: xrt-base (>= 2.25), xrt-base (<< 2.26)"
+      ],
+      "runtime_members": [
+        "opt/xilinx/xrt/lib/libxrt_driver_xdna.so.2 -> libxrt_driver_xdna.so.2.25.260102.56.release",
+        "opt/xilinx/xrt/lib/libxrt_driver_xdna.so.2.25.260102.56.release"
+      ]
+    }
+  },
+  "sdk_wheels": {
+    "onnxruntime_vitisai-1.27.0-py3-none-linux_x86_64.whl": {
+      "metadata": [
+        "Name: onnxruntime-vitisai",
+        "Version: 1.27.0",
+        "Requires-Python: >=3.6",
+        "Requires-Dist: voe==1.8.0",
+        "Requires-Dist: coloredlogs",
+        "Requires-Dist: flatbuffers",
+        "Requires-Dist: numpy>=1.21.6",
+        "Requires-Dist: packaging",
+        "Requires-Dist: protobuf",
+        "Requires-Dist: sympy"
+      ],
+      "wheel": [
+        "Root-Is-Purelib: true",
+        "Tag: py3-none-linux_x86_64"
+      ],
+      "native_abi_named_entries": [],
+      "original_gnu_stack_flags": [
+        7
+      ]
+    },
+    "voe-1.8.0-py3-none-linux_x86_64.whl": {
+      "metadata": [
+        "Name: voe",
+        "Version: 1.8.0",
+        "Requires-Python: >=3.6",
+        "Requires-Dist: accelerate==1.12.0",
+        "Requires-Dist: datasets==4.5.0",
+        "Requires-Dist: evaluate==0.4.6",
+        "Requires-Dist: onnx-ir",
+        "Requires-Dist: onnxruntime-vitisai ==1.27.0",
+        "Requires-Dist: transformers==4.57.6",
+        "Requires-Dist: zstandard==0.25.0"
+      ],
+      "wheel": [
+        "Root-Is-Purelib: true",
+        "Tag: py3-none-linux_x86_64"
+      ],
+      "native_abi_named_entries": [
+        "voe/lib/pyflexmlrt.cpython-312-x86_64-linux-gnu.so"
+      ]
+    }
+  },
+  "current_python_bindings": {
+    "onnxruntime_pybind11_state.so.orig": {
+      "sha256": "fa51a8984781bbe291d85371b5240f80d76e6d8b23d356256a18064d08774724",
+      "gnu_stack": [
+        "GNU_STACK      0x000000 0x0000000000000000 0x0000000000000000 0x000000 0x000000 RW  0x10"
+      ],
+      "imports__PyThreadState_UncheckedGet": true
+    },
+    "onnxruntime_pybind11_state.so": {
+      "sha256": "fa51a8984781bbe291d85371b5240f80d76e6d8b23d356256a18064d08774724",
+      "gnu_stack": [
+        "GNU_STACK      0x000000 0x0000000000000000 0x0000000000000000 0x000000 0x000000 RW  0x10"
+      ],
+      "imports__PyThreadState_UncheckedGet": true
+    }
+  },
+  "mlir_upstream_env_install_sha256": "993fa37b49ee5bab1f17afcee652c47f24517d2c234f9b2a82452f11eed0fe9c",
+  "wrong_systemd_path_present_now": false,
+  "no_clean_install": true,
+  "iron_comparator": {
+    "id": "P2-IRON-COMPARE",
+    "source_and_installed_hashes": [
+      "e267e836f473a0573c5fc605b56ea2826616787de297fcc85a4532b3eac54031",
+      "e267e836f473a0573c5fc605b56ea2826616787de297fcc85a4532b3eac54031"
+    ],
+    "default": "np.array_equal when both tolerances omitted; current source, no new execution"
+  },
+  "symbol_import_export": {
+    "id": "P2-PY-ABI",
+    "binding_imports__PyThreadState_UncheckedGet": true,
+    "usr_bin_python3_14_exports_symbol": false,
+    "scope": "nm -D names plus historical U error; not a new import test"
+  },
+  "header_provenance": {
+    "id": "P2-HDR",
+    "official_ref": "microsoft/onnxruntime v1.27.0",
+    "official_git_blobs": {
+      "onnxruntime_c_api.h": "793cdd505aaa3f362e2d29dbae2e8b00e31742f8",
+      "onnxruntime_ep_c_api.h": "6824b85ba300114ee1fd2db64098b17f5f65b80b"
+    },
+    "local_blob_matches": true
+  },
+  "known_archive_members": {
+    "onnxruntime.tar.gz_first_root": "onnxruntime",
+    "sdk_peano_member": "lnx64.o/tools/peano/lib/libpeano-lib.so.21.0git",
+    "sdk_peano_size_bytes": 186631968,
+    "quicktest_model_member": "quicktest/test_model.onnx",
+    "scope": "bounded root/member inspection, no full large archive hash or staging"
+  }
+}

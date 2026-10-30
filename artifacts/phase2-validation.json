@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "validated_utc": "2026-10-30T13:52:04.762000+00:00",
+  "offline_fixture_tests": 21,
+  "fixture_outcome": "PASS",
+  "python_ast": "PASS",
+  "bash_syntax": "PASS",
+  "cpp_syntax": {
+    "status": "PASS",
+    "flags": "g++ -std=c++17 -Wall -Wextra -Werror -fsyntax-only -I<SDK>/cpp-test/include src/inference-probe.cpp",
+    "linked": false,
+    "executed": false
+  },
+  "saved_evidence_and_dry_plans": [
+    {
+      "case": "historical-failure",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "status": "PASS",
+      "command": [
+        "bash",
+        "scripts/verify-inference.sh",
+        "--log",
+        "<REPO>/.private-evidence/capture-20261030T125755Z/source-0097.txt"
+      ],
+      "reported_status": "FAIL"
+    },
+    {
+      "case": "historical-success",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "status": "PASS",
+      "command": [
+        "bash",
+        "scripts/verify-inference.sh",
+        "--log",
+        "<REPO>/.private-evidence/capture-20261030T125755Z/source-0095.txt"
+      ],
+      "reported_status": "SKIP"
+    },
+    {
+      "case": "iron-no-log",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "status": "PASS",
+      "command": [
+        "bash",
+        "scripts/verify-iron.sh"
+      ],
+      "reported_status": "SKIP"
+    },
+    {
+      "case": "mlir-static",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "status": "PASS",
+      "command": [
+        "bash",
+        "scripts/verify-mlir-aie.sh",
+        "--mlir-root",
+        "<MLIR>"
+      ],
+      "reported_status": "SKIP"
+    },
+    {
+      "case": "launcher-plan",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "PASS",
+      "command": [
+        "bash",
+        "scripts/run-npu.sh",
+        "--sdk-root",
+        "<SDK>",
+        "--xrt-root",
+        "<SDK>/xrt-2.25.37/opt/xilinx/xrt",
+        "--app",
+        "<SDK>/cpp-test/quicktest"
+      ],
+      "reported_status": "text plan"
+    },
+    {
+      "case": "xrt-stage-plan",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "PASS",
+      "command": [
+        "python3",
+        "-I",
+        "-B",
+        "scripts/stage-xrt.py",
+        "--packages",
+        "<SDK>/xrt-packages/RAI_1.8_Linux_NPU_XRT"
+      ],
+      "reported_status": "PLAN"
+    },
+    {
+      "case": "probe-build-plan",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "PASS",
+      "command": [
+        "python3",
+        "-I",
+        "-B",
+        "scripts/build-probe.py",
+        "--sdk-root",
+        "<SDK>"
+      ],
+      "reported_status": "PLAN"
+    },
+    {
+      "case": "input-plan",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "PASS",
+      "command": [
+        "python3",
+        "-I",
+        "-B",
+        "scripts/make-input.py",
+        "--output",
+        "<REPO>/.private-work/fixture-input.f32le"
+      ],
+      "reported_status": "PLAN"
+    },
+    {
+      "case": "iron-plan",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "PASS",
+      "command": [
+        "python3",
+        "-I",
+        "-B",
+        "scripts/run-iron.py",
+        "--mlir-root",
+        "<MLIR>",
+        "--venv",
+        "<MLIR>/ironenv"
+      ],
+      "reported_status": "PLAN"
+    }
+  ],
+  "device_execution": false,
+  "vendor_imports": false,
+  "clean_install_validated": false,
+  "preservation": {
+    "selected_original_identities_unchanged": 15,
+    "phase1_private_source_copies_unchanged": 44,
+    "mlir_saved_diff_unchanged": true,
+    "scope": "selected identities/diff, not whole-environment byte preservation proof"
+  },
+  "historical_success_counts": {
+    "NPU": 398,
+    "VITIS_EP_CPU": 2,
+    "NPU_subgraphs": 1,
+    "scope": "saved log content, no new execution"
+  },
+  "new_cpp_source_sha256": "96de13e108134d750d4fd6bdbdd9e5db4055e8b21fb9570a430387f05ed2d719",
+  "public_record_checks": {
+    "relative_markdown_links": "PASS",
+    "personal_path_and_credential_pattern_scan": "PASS",
+    "unexpected_binary_or_large_raw_files": "PASS",
+    "exact_guard_patch_before_after_hash": "PASS"
+  }
+}

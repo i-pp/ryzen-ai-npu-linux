@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "baseline_id": null,
+  "identity_kind": "new-acquisition",
+  "review_status": "pending",
+  "acquisition_notes": null,
+  "artifacts": {
+    "onnxruntime": {
+      "filename": "onnxruntime.tar.gz",
+      "sha256": null,
+      "source_url": "https://account.amd.com/en/forms/downloads/xef.html?filename=ryzen_ai-1.8.0.tgz",
+      "payload_root": "onnxruntime"
+    },
+    "sdk_peano": {
+      "filename": "llvm_aie-1.8.0-py3-none-linux_x86_64.whl",
+      "sha256": null,
+      "source_url": "https://account.amd.com/en/forms/downloads/xef.html?filename=ryzen_ai-1.8.0.tgz",
+      "payload_member": "lnx64.o/tools/peano/lib/libpeano-lib.so.21.0git",
+      "payload_size_bytes": 186631968
+    },
+    "quicktest": {
+      "filename": "quicktest.tar.gz",
+      "sha256": null,
+      "source_url": "https://account.amd.com/en/forms/downloads/xef.html?filename=ryzen_ai-1.8.0.tgz",
+      "payload_member": "quicktest/test_model.onnx"
+    }
+  },
+  "headers": {
+    "onnxruntime_c_api.h": "c4ed26d7bbc7b649c1c38622424d88dfb1a28e3d3594c5f1456cf458814e8381",
+    "onnxruntime_ep_c_api.h": "f65ac849718cabe3ff4902698dd2de643c3b3dbe0010242b2b0407548e7ee00c"
+  },
+  "model_sha256": "7a78c7e85bac3a0681e3d2f77e69093a761e1c8f62f7fc65ff5ce3e1b82c5ba3",
+  "notes": "Copy privately, choose a unique new-... baseline ID, acquire authorized inputs, record real complete hashes/acquisition evidence, review and freeze this manifest before apply. A reviewed marker is an operator record, not a signature. This branch never establishes historical archive identity."
+}

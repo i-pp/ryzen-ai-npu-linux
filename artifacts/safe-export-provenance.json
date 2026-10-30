@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "prepared_utc": "2026-10-30T16:51:15.967589+00:00",
+  "backup_intent": "private GitHub code/documentation snapshot only",
+  "intended_repository": "i-pp/ryzen-ai-npu-linux",
+  "required_visibility": "private",
+  "public_release_authorized": false,
+  "source_local_commit": "7ace2d85716a267657918b99fac28798877a0d62",
+  "source_git_tree": "bf29cb418c64393d315f9eafa8efd5aa8443b3f3",
+  "source_tracked_file_count": 94,
+  "source_tracked_file_bytes": 616672,
+  "source_manifest_sha256": "f52dfb1d6e8b079366225fe4e196dc7519a89193528f70da9d226fab7fa77465",
+  "initial_history_policy": "fresh root commit; no source refs/objects/config copied",
+  "preserved_paths": "all current tracked source docs/scripts/tests/src/articles/artifacts and existing LICENSE status notice",
+  "source_files_modified": false,
+  "export_only_readme_overlay": true,
+  "article_files_modified": false,
+  "vendor_binaries_models_venvs_raw_logs_included": false,
+  "clean_install_validated": false,
+  "license_selection": "pending; existing status notice retained"
+}

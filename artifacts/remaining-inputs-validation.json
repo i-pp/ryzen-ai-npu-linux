@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "checked_utc": "2026-10-30T15:21:05.516650+00:00",
+  "scope": "bounded metadata/cache ZIP-directory/small-member inspection and documentation updates only",
+  "relative_markdown_links": "PASS",
+  "json_parse": "PASS",
+  "current_tree_private_locator_patterns": "PASS",
+  "native_history_publication_gate": "BLOCKED; earlier private locators remain, no rewrite",
+  "article_files_changed": false,
+  "large_sdk_hashes_run": false,
+  "whole_wheel_hashes_run": false,
+  "downloads": 0,
+  "vendor_import_install_build_run": false,
+  "npu_gpu_execution": false,
+  "metadata_findings": {
+    "retained_large_inputs_stat_checked": 10,
+    "all_present_and_phase1_size_mtime_match": true,
+    "pip_metadata_bytes_read": 361432,
+    "wheel_zip_metadata_bytes_read": 306325,
+    "sdk_outer_header_bytes_read": 10240,
+    "cached_wheel_metadata_matches_installed": true
+  },
+  "code_tests": "not repeated: no code modified; prior 39/39 repair fixture result remains separate",
+  "clean_install_validated": false
+}

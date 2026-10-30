@@ -1,0 +1,28 @@
+{
+  "status": "PLAN",
+  "inputs": [
+    "onnxruntime.tar.gz",
+    "llvm_aie-1.8.0-py3-none-linux_x86_64.whl",
+    "quicktest.tar.gz"
+  ],
+  "destination": ".private-work/cpp-sdk",
+  "archives_hashed": false,
+  "effect": "extract C++ runtime, pinned model, SDK Peano and matched headers only",
+  "python_environment_created": false,
+  "baseline": {
+    "baseline_id": "historical-cpp-sdk-1.8.0",
+    "identity_kind": "historical-restore",
+    "manifest_sha256": "84fba37df4e4d78e891b973edbb6e6fd120ef0ba8b528ee190d4f3653e6dd04c",
+    "historical_archive_identity_claimed": false
+  },
+  "apply_blockers": [
+    "manifest review_status is not reviewed",
+    "full reviewed archive hash missing: onnxruntime",
+    "historical outer distribution member path missing: onnxruntime",
+    "full reviewed archive hash missing: sdk_peano",
+    "historical outer distribution member path missing: sdk_peano",
+    "historical outer distribution member path missing: quicktest",
+    "historical complete distribution hash missing",
+    "historical identity source review missing"
+  ]
+}

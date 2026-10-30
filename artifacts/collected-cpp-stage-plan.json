@@ -1,0 +1,19 @@
+{
+  "status": "PLAN",
+  "inputs": [
+    "onnxruntime.tar.gz",
+    "llvm_aie-1.8.0-py3-none-linux_x86_64.whl",
+    "quicktest.tar.gz"
+  ],
+  "destination": ".private-work/cpp-sdk",
+  "archives_hashed": false,
+  "effect": "extract C++ runtime, pinned model, SDK Peano and matched headers only",
+  "python_environment_created": false,
+  "baseline": {
+    "baseline_id": "new-collected-cpp-sdk-1.8.0-20261030",
+    "identity_kind": "new-acquisition",
+    "manifest_sha256": "2ee461c00c3c37835901a69a08f66fb76f0ba862e0ba657a19e77988f0251054",
+    "historical_archive_identity_claimed": false
+  },
+  "apply_blockers": []
+}

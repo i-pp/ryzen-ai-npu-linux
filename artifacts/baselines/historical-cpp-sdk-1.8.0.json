@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "baseline_id": "historical-cpp-sdk-1.8.0",
+  "identity_kind": "historical-restore",
+  "review_status": "incomplete",
+  "historical_identity_evidence": null,
+  "distribution": {
+    "filename": "ryzen_ai-1.8.0.tgz",
+    "sha256": null,
+    "source_url": "https://account.amd.com/en/forms/downloads/xef.html?filename=ryzen_ai-1.8.0.tgz",
+    "access": "manual authenticated AMD acquisition and terms review; receipt not recovered",
+    "current_collected_sha256": "7532d511532dd8842995bc8dc2edd8a45fbf261312ea9abe8dd01b4d502ac98d",
+    "current_hash_record": "artifacts/collected-input-hashes.json"
+  },
+  "artifacts": {
+    "onnxruntime": {
+      "filename": "onnxruntime.tar.gz",
+      "sha256": null,
+      "source_url": "https://account.amd.com/en/forms/downloads/xef.html?filename=ryzen_ai-1.8.0.tgz",
+      "distribution_member": null,
+      "payload_root": "onnxruntime",
+      "gap": "current container hash recorded separately; historical successful-run linkage and exact outer distribution member path remain unverified",
+      "current_collected_sha256": "51a091ce47b87a1a5a0c7df9df5ad30fc05a9797758fdda7703f891d9ce8199f",
+      "current_hash_record": "artifacts/collected-input-hashes.json"
+    },
+    "sdk_peano": {
+      "filename": "llvm_aie-1.8.0-py3-none-linux_x86_64.whl",
+      "sha256": null,
+      "source_url": "https://account.amd.com/en/forms/downloads/xef.html?filename=ryzen_ai-1.8.0.tgz",
+      "distribution_member": null,
+      "payload_member": "lnx64.o/tools/peano/lib/libpeano-lib.so.21.0git",
+      "payload_size_bytes": 186631968,
+      "gap": "current container hash recorded separately; historical successful-run linkage and exact outer distribution member path remain unverified",
+      "current_collected_sha256": "35700efe0706324959f7b6f159250094d20157baed14345fb8d5bb2be0475308",
+      "current_hash_record": "artifacts/collected-input-hashes.json"
+    },
+    "quicktest": {
+      "filename": "quicktest.tar.gz",
+      "sha256": "0d0328b4e30f277c5267d5524e89a7f3f8bbcc2cbf50878ecc0130ef10b9db18",
+      "source_url": "https://account.amd.com/en/forms/downloads/xef.html?filename=ryzen_ai-1.8.0.tgz",
+      "distribution_member": null,
+      "payload_member": "quicktest/test_model.onnx"
+    }
+  },
+  "headers": {
+    "onnxruntime_c_api.h": "c4ed26d7bbc7b649c1c38622424d88dfb1a28e3d3594c5f1456cf458814e8381",
+    "onnxruntime_ep_c_api.h": "f65ac849718cabe3ff4902698dd2de643c3b3dbe0010242b2b0407548e7ee00c"
+  },
+  "model_sha256": "7a78c7e85bac3a0681e3d2f77e69093a761e1c8f62f7fc65ff5ce3e1b82c5ba3",
+  "notes": "Known pins plus explicit gaps. Not an installable historical lock and not clean-install proof. Never fill unknown historical hashes from an unrelated new download.",
+  "retained_input_evidence": {
+    "inventory": "artifacts/remaining-inputs-inventory.json",
+    "state": "selected SDK/ORT/Peano containers now fully hashed as current collected inputs; historical identities remain separate and incomplete",
+    "outer_member_scope": "only first two headers inspected, stopped before a large payload; later member paths not yet enumerated",
+    "interpretation": "current input pinning complete for selected files; no file loss established; no historical equivalence or outer-member comparison claimed",
+    "current_cpp_baseline": "artifacts/baselines/new-collected-cpp-sdk-1.8.0-20261030.json"
+  }
+}

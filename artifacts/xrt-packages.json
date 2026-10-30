@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "scope": "observed local inputs; hashes are not AMD-published attestations",
+  "official_archive_url": "https://download.amd.com/opendownload/RyzenAI/Driver/RAI_1.8_Linux_NPU_XRT.zip",
+  "archive_sha256": "ea37ce2ff46ae20e64a081c38fc45b3bae183e488f293543c811f4c05186d2df",
+  "packages": [
+    {
+      "name": "xrt_202620.2.25.37_24.04-amd64-base.deb",
+      "sha256": "4dadc937b4818334884ba61639c1e7b84c32c79cb5959d628df17e334b8015f4",
+      "evidence": "E077",
+      "role": "Required: local core/coreutil libraries and version metadata"
+    },
+    {
+      "name": "xrt_202620.2.25.37_24.04-amd64-npu.deb",
+      "sha256": "4b23e092e079abfb85afdee0d36efe449b349d62badf5ae510b0bad54b86d67c",
+      "evidence": "E078",
+      "role": "Required for historical bundle fidelity; minimality not established"
+    },
+    {
+      "name": "xrt_plugin.2.25.260102.56.release_24.04-amd64-amdxdna.deb",
+      "sha256": "ac47b5c731931dec16d5673a64cc308ebd07f7637c8f34bba89167d63980576a",
+      "evidence": "P2-XRT-PLUGIN; E079 metadata",
+      "role": "Required: user-space libxrt_driver_xdna; kernel/firmware payload is deliberately not extracted by the helper"
+    }
+  ],
+  "not_required_for_cpp_runtime": "base-dev supplies unversioned linker symlinks/headers; the ORT C API application does not link to XRT directly"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "checked_utc": "2026-10-30T15:43:40.040386+00:00",
+  "scope": "selected five-file hash completion and docs/artifacts update only",
+  "hash_run_status": "PASS",
+  "full_file_count": 5,
+  "total_bytes": 10624201096,
+  "hash_record": "artifacts/collected-input-hashes.json",
+  "source_identity_and_atime_stability": "PASS for the five inputs",
+  "sum_and_baseline_hash_consistency": "PASS",
+  "current_cpp_baseline_plan": {
+    "status": "PASS",
+    "artifact": "artifacts/collected-cpp-stage-plan.json",
+    "apply_blockers": [],
+    "archive_reads_during_plan": false,
+    "staging_performed": false
+  },
+  "historical_restore_plan": {
+    "status": "BLOCKED_AS_EXPECTED",
+    "artifact": "artifacts/collected-historical-stage-plan.json",
+    "historical_fields_left_unclaimed": true
+  },
+  "json_parse": {
+    "status": "PASS",
+    "files_before_this_validation_record": 19
+  },
+  "relative_markdown_links": {
+    "status": "PASS",
+    "checked": 156,
+    "broken": []
+  },
+  "current_tree_private_locator_scan": "PASS including the 20 staged docs/artifacts files; selected patterns, not rights clearance",
+  "git_diff_check": "PASS",
+  "modified_paths_scope": "docs and artifacts only",
+  "articles_scripts_tests_changed": false,
+  "public_code_tests": "not repeated; no public code changes; prior 39 fixture tests remain separate evidence",
+  "vendor_execution_download_extraction": "NOT_PERFORMED",
+  "npu_gpu_test": "NOT_PERFORMED",
+  "clean_install_validated": false,
+  "historical_equivalence_proven": false,
+  "vendor_authenticity_verified": false,
+  "staged_path_check": {
+    "status": "PASS",
+    "files": 20,
+    "only_docs_artifacts": true,
+    "unaliased_host_paths_or_private_locator_matches": 0
+  }
+}

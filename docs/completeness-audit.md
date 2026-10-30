@@ -1,0 +1,47 @@
+# Completeness audit before article drafting
+
+Phase-2 technical handoff, not final-project sign-off. Every mandatory area has either evidence and a reproduction/verification path, or an explicit unresolved gate below. The Japanese article has **not** been drafted by this worker; the final Sol High/Astra roles remain separate. “Coverage” is the required article topic, not a claim that an article section already exists.
+
+Confidence: Verified = directly inspected local record/source; Corroborated = consistent local/U collector evidence without independent reproduction; Inferred/Unverified/Unknown retain their ordinary task definitions. U/A collector provenance is explained in [conversation evidence](conversation-evidence.md).
+
+| Component/operation | Historical/current evidence | Reproduction instruction | Verification method | Confidence / missing information | Article coverage to write |
+|---|---|---|---|---|---|
+| Hardware detection | DMI/CPU/PCI capture, U initial logs | R01, [hardware](hardware-and-driver.md) | PCI binding + host identity | Verified; no fresh device test | Hardware and motivation |
+| Kernel/amdxdna | boot/module capture, U 38→42 transition | R02; conditional package/reboot gate | boot journal + bound module | Verified states; exact update steps Unknown | Initial enablement and history |
+| Firmware | boot path, E089/E091 hash/link, U version | R02, preserve compatible Ubuntu firmware | boot log plus actual version where query available | Loaded version Corroborated; no fresh query | Firmware distinction |
+| Device permissions | U node/render, account DB; namespace hidden | R03, [access procedure](memory-and-permissions.md) | actual host ACL/membership/effective process access | Historical Corroborated; current effective host ACL missing | Permissions versus namespace |
+| memlock | U 64 MiB/-11 and later actual 1 GiB; E012/E014 | R03; reviewed PAM/correct system drop-in | actual shell/manager/child limits, not file alone | Strong Corroborated cause; one-factor proof/restart time missing | Failure, wrong path, correction |
+| System XRT | dpkg + library hashes, U execution | R04, separate distro context | metadata then opt-in examine | Verified installed version; exact clean APT lock unavailable | System runtime baseline |
+| XRT validation | U root and user 51.0 TOPS via collector; E016 support archive | [validation procedure](xrt-validation.md) | future exact command/config/exit/log capture | Historical Corroborated; original local output/full config absent | Diagnostic performance limits |
+| MLIR-AIE source/build | exact revision, two local changes, uninitialized submodules | R05, [setup](mlir-aie-setup.md) | revision/diff/wheel identity, later compile | Verified snapshot; full source-build success not evidenced | Major independent toolchain phase |
+| IRON | U aie/SAXPY/reduce; A memcpy and DMA report | R06, [run procedure](iron-execution.md) | retained generated artifacts, exact data equality, exit/warnings | memcpy primary log missing; no new run | Design, diagnosis and warning analysis |
+| Python 3.14 IRON | interpreter/config/cp314 mlir tag; cp314 pyxrt link | R05 and exact opt-in guard patch | metadata; later import/platform checks | Verified state; LLVM-AIE tag incompatibility unresolved | Version guard and visibility failure |
+| Python 3.12 SDK | vendor requirement, U no APT candidate | R07 separate prefix/container branch | future real interpreter/import/run evidence | Unknown provisioning; never claim installed success | Requirement versus actual C++ route |
+| NumPy/dependencies | metadata ranges and installed versions | [dependency matrix](dependencies.md) | resolved lock/wheel hashes and import tests | Versions Verified, minimal required set only partly known | Required versus incidental packages |
+| LLVM-AIE platform | installed cp310 tags on cp314, U pip-check warning | **Gate:** recover correct wheel/method; no silent force install | future supported wheel/native toolchain test | Verified mismatch, historical install method Unknown | Reinstall limitation |
+| SDK installation | E050/E051, package metadata, archive names | R08, [SDK source analysis](sdk-installation.md) | source/hash/identity then new-branch execution | Installer behavior Verified; full transcript and original archive member comparison missing | Python experiment and deployment |
+| Archives/patches/licenses | E017–E079, targeted XRT plugin hash, explicit EULA links | manual authorized acquisition; staging dry/apply | full hashes + receipts + source comparison | Current selected input hashes complete; historical linkage/outer-member/full acquisition receipt missing; license choice pending | Artifact provenance, no binary redistribution |
+| C++ ONNX Runtime | E033–E042, official header blob matches, historical PASS | R10, [integration](onnxruntime-integration.md), new probe build | syntax passed; future link/load/Run | API use Verified; original exact full build command incomplete | C API bypass and logger ordering |
+| Vitis AI EP | EP source calls, ELF graph, E096/E098 | SDK closure, correct env/logger ordering | EP/session versus actual Run separately | Verified history; not a standalone compatibility proof | Registration/compile versus execution |
+| Peano | U extraction, ELF xcompiler NEEDED, current SDK library | SDK llvm_aie selected member in staging helper | SONAME/hash/closure, future compiler invocation | Exact inner member and current wheel hash Verified; outer distribution relationship/historical identity unverified | Distinct SDK and IRON toolchains |
+| Compile-only failure | E096/E097 originals; U/A chronology | diagnostic replay; [investigation](xrt-investigation.md) | stage-aware parser, loader/source comparison | Failure Verified; sole ABI cause remains Inferred | Central failure investigation |
+| Dynamic library analysis | ELF SONAME/RPATH/needed; 53/61 XRT names in both versions | `analyze-runtime.py`, future LD_DEBUG process | static versus actual process-selected libraries | Verified limited name check; dynamic-only/ABI semantics not proven | What each diagnostic establishes |
+| Local XRT2.25.37 | version/hash, three package hashes, E098 loader init | R09, `stage-xrt.py` + `run-npu.sh` | receipt + future process trace/init | Historical remedy Corroborated; no controlled factor isolation | Local extraction preserving system XRT |
+| NPU inference | E098 398/2/1 plus API completion, model identity | R11 isolated probe | actual exit, library attribution, Run | Historical log Verified; no independent hardware trace | Success and remaining CPU work |
+| Output shape/numerics | static float32 symbolic shapes; historical source lacks comparison | same-input CPU/Vitis probe + explicit tolerance comparator | shape/count/finiteness/provenance/error tests | Static shape Verified; actual numeric acceptance SKIP | What “PASS” did and did not mean |
+| Clean-room procedure | all R01–R11 stages and explicit gates | [gated recipe](reproduction-procedure.md) | independent new-host acceptance across selected branches | **Not performed**; wheel/input gates real | Reproduction and limitations |
+| Preservation/Git | phase-1 base + phase-2 hashes/diffs, ignored raw/binaries | local commits only, no remote | status, diff, secret/path/binary checks | selected identities checked; not a whole-disk preservation proof | Method and evidence boundaries |
+
+## Review gates for the next roles
+
+The writer should build the Japanese narrative around the actual sequence: system runtime/limits → independent IRON → SDK Python failure → C API/compiler/Peano closure → compile-only investigation → local runtime completion. Use local original logs for 398/2/1; use U collector evidence with context for 51 TOPS; keep A-only memcpy numbers qualified or omit them as measurements.
+
+The independent reviewer must challenge: clean-host artifact availability, LLVM-AIE cp310 tags, unsupported SDK Python assumptions, original versus modified installer provenance, model-output tolerance choice, actual CPU/NPU result provenance, namespace versus host claims, and any assertion of a uniquely proven XRT ABI root cause. Article, publication rights and independent hardware acceptance remain incomplete.
+
+## Astra repair addendum
+
+The original independent review is retained unchanged. [Targeted remediation](reviews/astra-remediation.md) separates fixed code/privacy/host-procedure items from R01's unresolved historical input identities and unperformed clean-host acceptance. Use the reviewed `--baseline` interface, [host package/preflight](host-dependencies.md), and [publication/history gate](publication-gates.md) in the current instructions. Articles remain a separate writer boundary.
+
+## Selected current-input hashing addendum
+
+[Five full current container hashes](collected-input-hashes.md) are complete and source metadata/atime were unchanged. Both IRON containers were located before this pass. The [new C++ baseline](../artifacts/baselines/new-collected-cpp-sdk-1.8.0-20261030.json) is distinct from historical restoration; the separate [IRON record](../artifacts/baselines/new-collected-iron-wheels-20261030.json) records current hashes without claiming full installed-payload equality. Older rows/checkpoints that say large hashes or wheel containers are missing refer to earlier snapshots. Historical equivalence, source/member review, LLVM-AIE native acceptance and independent clean-host/numeric verification remain open.

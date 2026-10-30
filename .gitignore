@@ -1,0 +1,27 @@
+# Private machine evidence and raw logs
+.private-evidence/
+.private-work/
+*.log
+*.trace
+# Environments, proprietary packages, generated artifacts
+.venv/
+venv/
+*env314/
+ironenv/
+__pycache__/
+*.py[cod]
+*.whl
+*.tar
+*.tar.gz
+*.zip
+*.deb
+*.so
+*.so.*
+*.onnx
+*.xclbin
+*.elf
+*.bin
+build/
+cache/
+.env
+.env.*

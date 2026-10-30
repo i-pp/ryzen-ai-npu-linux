@@ -1,0 +1,788 @@
+{
+  "schema_version": 2,
+  "phase": "2-causal-analysis-and-targeted-astra-repair",
+  "capture_utc": "2026-10-30T12:57:55Z",
+  "status": "HISTORICAL_CPP_SUCCESS_EVIDENCED_CLEAN_INSTALL_NOT_VALIDATED",
+  "evidence_inventory": "evidence-inventory.json",
+  "hardware": {
+    "vendor": "GMKtec",
+    "product": "EVO-X3",
+    "processor": "AMD RYZEN AI MAX+ 395 w/ Radeon 8060S",
+    "npu_pci_id": "1022:17f0",
+    "npu_pci_address": "0000:67:00.1",
+    "driver": "amdxdna",
+    "confidence": "Verified",
+    "evidence": [
+      "DMI sys_vendor/product_name",
+      "cpu.json",
+      "pci-npu.json"
+    ]
+  },
+  "host_os": {
+    "name": "Ubuntu 26.04.1 LTS",
+    "kernel": "7.0.0-42-generic",
+    "confidence": "Verified",
+    "evidence": [
+      "os.json",
+      "kernel.json"
+    ]
+  },
+  "driver_firmware": {
+    "driver_module": "amdxdna",
+    "in_tree": true,
+    "kernel_log_driver_version": "0.7.0",
+    "module_srcversion": "335D09A533C5E2F70B4A050",
+    "firmware_loaded_path": "amdnpu/17f0_11/npu_7.sbin",
+    "firmware_disk_symlink_target": "npu.sbin.1.1.2.65.zst",
+    "loaded_version_confidence": "Corroborated",
+    "loaded_version_caveat": "Kernel journal identifies path; current symlink identifies version. No fresh firmware/device query was run.",
+    "evidence": [
+      "driver.json",
+      "kernel-npu-log.json",
+      "firmware source metadata"
+    ]
+  },
+  "permissions_and_limits": {
+    "collector_memlock_soft_bytes": 1073741824,
+    "collector_memlock_hard_bytes": 1073741824,
+    "pam_limits_config_kib": 1048576,
+    "systemd_user_service_config": "LimitMEMLOCK=1G",
+    "configured_confidence": "Verified",
+    "host_device_acl": "Unknown: device nodes unavailable in execution namespace",
+    "host_effective_render_membership": "Unknown: supplementary groups appear as nogroup in namespace; getent entries alone do not establish effective device access",
+    "effective_user_service_limit": "Unknown: system/user bus reads denied",
+    "historical_8MiB_64MiB_failure": "Corroborated by parent collector U logs: initial 8192 shell limit, 67108864-byte mmap errno -11; later 1 GiB and ordinary-user success. Original local failure file absent; no strict one-factor isolation.",
+    "evidence": [
+      "process-limits.json",
+      "account.json",
+      "account-database.json",
+      "device-nodes.json",
+      "device-acl.json",
+      "systemd-user.json",
+      "systemd-user-unit.json",
+      "limits.d/99-xrt-memlock.conf",
+      "user@.service.d/99-memlock.conf"
+    ]
+  },
+  "system_xrt": {
+    "packages_version": "1:2.21.75+dfsg-4",
+    "packages": [
+      "libxrt2",
+      "libxrt-npu2",
+      "libxrt-utils",
+      "libxrt-utils-npu",
+      "python3-xrt"
+    ],
+    "library": "/usr/lib/x86_64-linux-gnu/libxrt_coreutil.so.2.21.75",
+    "confidence": "Verified",
+    "evidence": [
+      "packages.json",
+      "source library hashes"
+    ],
+    "gemm_51_TOPS": {
+      "status": "HISTORICAL_U_LOG_RECOVERED_VIA_PARENT_COLLECTOR",
+      "confidence": "Corroborated",
+      "root_performance": {
+        "gemm_TOPS": 51.0,
+        "latency_us": 50.0,
+        "throughput_op_per_s": 74904.0
+      },
+      "user_default": {
+        "gemm_TOPS": 51.0,
+        "latency_us": 46.0,
+        "throughput_op_per_s": 76330.0
+      },
+      "evidence": "docs/conversation-evidence.md",
+      "scope": "XRT diagnostic, not ONNX throughput; no new benchmark; original local full log/config unavailable"
+    }
+  },
+  "local_xrt": {
+    "version": "2.25.37",
+    "version_hash": "0026185de81a179dc7d886197d3e35f9a179b4e8",
+    "root": "<WORKSPACE>/ryzen-ai-1.8.0/xrt-2.25.37/opt/xilinx/xrt",
+    "package_target": "24.04-amd64",
+    "confidence": "Verified",
+    "evidence": [
+      "version.json",
+      "XRT .deb names",
+      "run-npu.sh",
+      "ryzenai-xrt225.log:387,1151,1154"
+    ]
+  },
+  "mlir_aie": {
+    "origin": "https://github.com/Xilinx/mlir-aie.git",
+    "revision": "e28f6dc7e52fbb7b43f94b3693083c3f01a2387c",
+    "working_tree_modifications": [
+      "utils/env_install.sh",
+      "test/test_kernel_workflows.py"
+    ],
+    "submodules_initialized": false,
+    "python": "3.14.4",
+    "packages": [
+      {
+        "name": "mlir-aie",
+        "version": "1.4.5.dev113+ge28f6dc"
+      },
+      {
+        "name": "pip",
+        "version": "26.2.2"
+      },
+      {
+        "name": "cloudpickle",
+        "version": "3.1.2"
+      },
+      {
+        "name": "numpy",
+        "version": "2.5.4"
+      },
+      {
+        "name": "ml_dtypes",
+        "version": "0.6.0"
+      },
+      {
+        "name": "llvm-aie",
+        "version": "22.0.0.2026102001+4f5df13d"
+      }
+    ],
+    "confidence": "Verified",
+    "evidence": [
+      "mlir-revision.json",
+      "mlir-worktree.json",
+      "mlir-submodules.json",
+      "mlir-diff.json",
+      "python-iron.json",
+      "packages-iron.json"
+    ],
+    "iron_historical_metrics": {
+      "confidence": "Unverified as raw measurement; historical assistant reading recovered",
+      "claims": [
+        "memcpy PASS!",
+        "80.19 GB/s",
+        "NPU 1673.8 us",
+        "dispatch 1737.5 us",
+        "end-to-end 1849.0 us",
+        "DMA BD reuse warnings"
+      ],
+      "reason": "Parent collector A search snippet, preceding U body empty; primary attachment and exact warning not recovered. SAXPY/reduce U PASS separately recovered."
+    },
+    "installation_evidence": {
+      "route": "prebuilt distribution metadata; complete source build not evidenced",
+      "mlir_wheel_tags": [
+        "cp314-cp314-manylinux_2_35_x86_64"
+      ],
+      "llvm_wheel_tags": [
+        "cp310-cp310-manylinux_2_27_x86_64",
+        "cp310-cp310-manylinux_2_28_x86_64"
+      ],
+      "llvm_tag_compatibility": "Observed cached filename py3-none, internal cp310; normal filename-based selection and later internal-tag warning are consistent. Exact historical command and fresh native compatibility untested.",
+      "pyxrt_visibility": "Verified current venv symlink to /usr/lib/python3/dist-packages/pyxrt.cpython-314-x86_64-linux-gnu.so",
+      "upstream_env_script_sha256": "993fa37b49ee5bab1f17afcee652c47f24517d2c234f9b2a82452f11eed0fe9c",
+      "observed_local_env_script_sha256": "b83e5eda436153aac9d96b4da3219629fe7821dcc4c69cfe91fccf61a69a6a2a",
+      "evidence": "artifacts/phase2-evidence.json"
+    }
+  },
+  "ryzen_ai_sdk": {
+    "archive_version_label": "1.8.0",
+    "existing_venv": "ryzenenv314",
+    "python": "3.14.4",
+    "packages": [
+      {
+        "name": "nvidia-nvtx",
+        "version": "13.2.86"
+      },
+      {
+        "name": "nvidia-nvshmem-cu13",
+        "version": "3.7.2"
+      },
+      {
+        "name": "pip",
+        "version": "26.2.2"
+      },
+      {
+        "name": "protobuf",
+        "version": "7.36.2"
+      },
+      {
+        "name": "onnx",
+        "version": "1.23.2"
+      },
+      {
+        "name": "fsspec",
+        "version": "2025.10.0"
+      },
+      {
+        "name": "frozenlist",
+        "version": "1.8.0"
+      },
+      {
+        "name": "cuda-bindings",
+        "version": "13.4.4"
+      },
+      {
+        "name": "onnx-ir",
+        "version": "1.1.0"
+      },
+      {
+        "name": "coloredlogs",
+        "version": "15.0.1"
+      },
+      {
+        "name": "multidict",
+        "version": "7.2.1"
+      },
+      {
+        "name": "evaluate",
+        "version": "0.4.6"
+      },
+      {
+        "name": "sympy",
+        "version": "1.14.0"
+      },
+      {
+        "name": "python-dateutil",
+        "version": "3.0.0"
+      },
+      {
+        "name": "urllib3",
+        "version": "2.8.0"
+      },
+      {
+        "name": "datasets",
+        "version": "4.5.0"
+      },
+      {
+        "name": "triton",
+        "version": "3.9.0"
+      },
+      {
+        "name": "setuptools",
+        "version": "84.2.1"
+      },
+      {
+        "name": "Jinja2",
+        "version": "3.1.6"
+      },
+      {
+        "name": "requests",
+        "version": "2.34.2"
+      },
+      {
+        "name": "accelerate",
+        "version": "1.12.0"
+      },
+      {
+        "name": "pyarrow",
+        "version": "26.0.0"
+      },
+      {
+        "name": "nvidia-cuda-nvrtc",
+        "version": "13.2.86"
+      },
+      {
+        "name": "idna",
+        "version": "3.20"
+      },
+      {
+        "name": "transformers",
+        "version": "4.57.6"
+      },
+      {
+        "name": "torch",
+        "version": "2.15.0"
+      },
+      {
+        "name": "huggingface_hub",
+        "version": "0.36.2"
+      },
+      {
+        "name": "tokenizers",
+        "version": "0.22.2"
+      },
+      {
+        "name": "xxhash",
+        "version": "4.0.2"
+      },
+      {
+        "name": "onnxruntime-vitisai",
+        "version": "1.27.0"
+      },
+      {
+        "name": "zstandard",
+        "version": "0.25.0"
+      },
+      {
+        "name": "psutil",
+        "version": "7.2.2"
+      },
+      {
+        "name": "anyio",
+        "version": "4.15.1"
+      },
+      {
+        "name": "httpcore",
+        "version": "1.0.9"
+      },
+      {
+        "name": "mpmath",
+        "version": "1.3.0"
+      },
+      {
+        "name": "propcache",
+        "version": "0.5.4"
+      },
+      {
+        "name": "nvidia-cusparse",
+        "version": "12.7.10.12"
+      },
+      {
+        "name": "aiohttp",
+        "version": "3.14.5"
+      },
+      {
+        "name": "dill",
+        "version": "0.4.0"
+      },
+      {
+        "name": "cuda-toolkit",
+        "version": "13.2.2"
+      },
+      {
+        "name": "voe",
+        "version": "1.8.0"
+      },
+      {
+        "name": "safetensors",
+        "version": "0.8.0"
+      },
+      {
+        "name": "nvidia-nccl-cu13",
+        "version": "2.30.7"
+      },
+      {
+        "name": "filelock",
+        "version": "4.2.4"
+      },
+      {
+        "name": "nvidia-cudnn-cu13",
+        "version": "9.26.0.51"
+      },
+      {
+        "name": "regex",
+        "version": "2026.9.29"
+      },
+      {
+        "name": "cuda-pathfinder",
+        "version": "1.8.5"
+      },
+      {
+        "name": "humanfriendly",
+        "version": "10.0"
+      },
+      {
+        "name": "PyYAML",
+        "version": "6.0.3"
+      },
+      {
+        "name": "hf-xet",
+        "version": "1.8.0"
+      },
+      {
+        "name": "yarl",
+        "version": "1.25.1"
+      },
+      {
+        "name": "nvidia-cuda-cccl",
+        "version": "13.3.4.3.1"
+      },
+      {
+        "name": "networkx",
+        "version": "3.7"
+      },
+      {
+        "name": "numpy",
+        "version": "2.5.4"
+      },
+      {
+        "name": "packaging",
+        "version": "26.3"
+      },
+      {
+        "name": "nvidia-cuda-runtime",
+        "version": "13.2.86"
+      },
+      {
+        "name": "nvidia-cuda-cupti",
+        "version": "13.2.86"
+      },
+      {
+        "name": "tqdm",
+        "version": "4.70.1"
+      },
+      {
+        "name": "attrs",
+        "version": "26.1.0"
+      },
+      {
+        "name": "aiosignal",
+        "version": "1.4.0"
+      },
+      {
+        "name": "ml_dtypes",
+        "version": "0.6.0"
+      },
+      {
+        "name": "multiprocess",
+        "version": "0.70.18"
+      },
+      {
+        "name": "tzdata",
+        "version": "2026.6"
+      },
+      {
+        "name": "httpx",
+        "version": "0.28.1"
+      },
+      {
+        "name": "nvidia-cublas",
+        "version": "13.4.1.3"
+      },
+      {
+        "name": "flatbuffers",
+        "version": "25.12.19"
+      },
+      {
+        "name": "certifi",
+        "version": "2026.10.23"
+      },
+      {
+        "name": "nvidia-cufile",
+        "version": "1.17.1.22"
+      },
+      {
+        "name": "h11",
+        "version": "0.16.0"
+      },
+      {
+        "name": "charset-normalizer",
+        "version": "3.5.2"
+      },
+      {
+        "name": "nvidia-cufft",
+        "version": "12.2.0.57"
+      },
+      {
+        "name": "aiohappyeyeballs",
+        "version": "2.7.1"
+      },
+      {
+        "name": "nvidia-nvjitlink",
+        "version": "13.4.92"
+      },
+      {
+        "name": "pandas",
+        "version": "3.1.0"
+      },
+      {
+        "name": "typing_extensions",
+        "version": "4.16.0"
+      },
+      {
+        "name": "six",
+        "version": "1.17.0"
+      },
+      {
+        "name": "nvidia-cusparselt-cu13",
+        "version": "0.8.1"
+      },
+      {
+        "name": "MarkupSafe",
+        "version": "3.0.4"
+      },
+      {
+        "name": "nvidia-cusolver",
+        "version": "12.2.0.11"
+      }
+    ],
+    "python3_12_probe": "Not found on PATH or /usr/bin, in dpkg metadata, or bounded uv/opt paths; absence elsewhere is not proven.",
+    "installer_requires": "python3.12",
+    "modified_installer": "install_ryzen_ai_py314.sh",
+    "onnxruntime_cpp_library_version": "1.27.0",
+    "confidence": "Verified",
+    "evidence": [
+      "python-sdk.json",
+      "packages-sdk.json",
+      "pyvenv.cfg",
+      "install_ryzen_ai.sh",
+      "install_ryzen_ai_py314.sh",
+      "libonnxruntime.so.1.27.0 source hash"
+    ],
+    "python_import_success": "Not evidenced. Original ORT ZIP GNU_STACK RWE, installed binding RW and unresolved private CPython symbol support the historical failure; both .so and .orig now RW.",
+    "successful_historical_route": "C++ ONNX Runtime C API bypass; no SDK Python 3.12 success evidenced",
+    "historical_python_import": "Failed on executable-stack requirement, then _PyThreadState_UncheckedGet under 3.14 after historical ELF edit; no ELF edits or imports by this phase"
+  },
+  "application": {
+    "source": "<WORKSPACE>/ryzen-ai-1.8.0/cpp-test/quicktest.cpp",
+    "api": "ONNX Runtime C API called from C++",
+    "input": {
+      "name": "input",
+      "type": "float32",
+      "shape": [
+        1,
+        3,
+        32,
+        32
+      ],
+      "rng_seed": 42
+    },
+    "model": "<WORKSPACE>/ryzen-ai-1.8.0/cpp-test/samples/quicktest/test_model.onnx",
+    "model_sha256": "7a78c7e85bac3a0681e3d2f77e69093a761e1c8f62f7fc65ff5ce3e1b82c5ba3",
+    "source_contract_confidence": "Verified",
+    "output_shape": "Historical runtime did not query shape; static model declares [batch_size,10]. New probe expects batch=1 [1,10], not executed.",
+    "numeric_validation": "Not implemented historically. New same-input CPU/VitisAI probe and explicit-tolerance comparator fixture-tested; real arrays/acceptance SKIP.",
+    "output_shape_static": {
+      "name": "output",
+      "element_type": "float32",
+      "shape": [
+        "batch_size",
+        10
+      ],
+      "evidence": "artifacts/static-analysis.json",
+      "confidence": "Verified static wire metadata, not executed output"
+    },
+    "original_node_count_static": 386
+  },
+  "historical_inference": {
+    "failed_log": "/tmp/ryzenai-quicktest.log",
+    "failure": "XRT compile-only message; api->Run error",
+    "failed_system_xrt_open_evidence": "ryzenai-quicktest.strace:49 (openat success, not proof of complete initialization)",
+    "successful_log": "/tmp/ryzenai-xrt225.log",
+    "successful_markers": [
+      "ONNX Runtime: 1.27.0",
+      "Vitis AI EP registration: PASS",
+      "ONNX session creation: PASS",
+      "Inference: PASS",
+      "Quicktest: PASS"
+    ],
+    "npu_operators": 398,
+    "vitis_ep_cpu_operators": 2,
+    "actually_running_npu_subgraphs_reported": 1,
+    "confidence": "Verified",
+    "scope": "Verified content of historical logs, not fresh execution and not clean-room reproduction",
+    "remaining_loader_diagnostics": [
+      "undefined symbol: compile_onnx_model_vitisai_ep_v3",
+      "undefined symbol: profiler_start",
+      "undefined symbol: profiler_stop"
+    ],
+    "abi_root_cause": "Inferred, not uniquely established. Both current coreutil versions export 53/53 EP and 61/61 Dynamic Dispatch XRT namespace/C API imported names (unversioned names only); ABI layout, semantics, dynamic lookup and initialization not proven.",
+    "remedy_confidence": "Corroborated runtime-selection bundle: XILINX_XRT, local base/coreutil/core/plugin and library precedence changed together; no independent factor isolation"
+  },
+  "toolchains": {
+    "gcc": "15.2.0",
+    "g++": "15.2.0",
+    "clang": "21.1.8",
+    "cmake": "4.2.3",
+    "ninja": "1.13.2",
+    "libstdc++6_package": "16-20260322-1ubuntu1",
+    "confidence": "Verified",
+    "evidence": [
+      "version-*.json",
+      "packages.json"
+    ]
+  },
+  "historical_conversation": {
+    "content_read": false,
+    "status": "Visible-history collector handoff recovered; primary memcpy attachment still unavailable",
+    "phase2_read_scope": "Parent collector source-linked U/A/I handoff received; phase2 did not access raw JSON/omitted attachments. content_read=false refers to direct full-history access, not absence of recovered context.",
+    "collector_recovery": {
+      "messages": 202,
+      "user_messages": 100,
+      "assistant_messages": 102,
+      "assistant_bodies_omitted": 102,
+      "empty_user_bodies": 5,
+      "visible_range_utc": [
+        "2026-10-30T07:52:49.278Z",
+        "2026-10-30T12:14:21.220247Z"
+      ],
+      "evidence": "docs/conversation-evidence.md"
+    },
+    "source_id": "HIST-CONV",
+    "public_index": "artifacts/conversation-evidence-index.json",
+    "source_locator_policy": "Original conversation/message URLs and source identifiers are private only; previous Git history still requires an approved publication policy."
+  },
+  "limitations": [
+    "No independent clean-room reconstruction",
+    "No NPU/GPU execution or compilation in this phase",
+    "No ONNX/vendor runtime import",
+    "No all-disk hashing; exactly five retained containers fully hashed in a separate rate-limited follow-up",
+    "Original acquisition source and license terms require recovery",
+    "Historical shell commands have no timestamps and do not prove completion",
+    "Historical conversation handoff is secondary to raw local logs; omitted attachments not recovered",
+    "Exact XRT ABI/initialization failure remains unisolated; name-only symbol coverage is not semantic compatibility",
+    "New scripts are syntax/fixture/dry-plan validated only; no SDK staging integration, link/load or hardware test",
+    "No repository-wide license selected; no remote/push/publication",
+    "Retained SDK/IRON containers are present; five selected current container hashes are complete. Historical provenance/outer-member relationships and fresh native acceptance remain unverified."
+  ],
+  "inspection_probes": [
+    {
+      "id": "os",
+      "status": "CAPTURED",
+      "returncode": 0,
+      "error": ""
+    },
+    {
+      "id": "kernel",
+      "status": "CAPTURED",
+      "returncode": 0,
+      "error": ""
+    },
+    {
+      "id": "cpu",
+      "status": "CAPTURED",
+      "returncode": 0,
+      "error": ""
+    },
+    {
+      "id": "pci-npu",
+      "status": "CAPTURED",
+      "returncode": 0,
+      "error": ""
+    },
+    {
+      "id": "process-limits",
+      "status": "CAPTURED",
+      "returncode": 0,
+      "error": ""
+    },
+    {
+      "id": "account",
+      "status": "CAPTURED",
+      "returncode": 0,
+      "error": ""
+    },
+    {
+      "id": "account-database",
+      "status": "CAPTURED",
+      "returncode": 0,
+      "error": ""
+    },
+    {
+      "id": "device-nodes",
+      "status": "UNAVAILABLE",
+      "returncode": 2,
+      "error": "ls: cannot access '/dev/accel': No such file or directory\nls: cannot access '/dev/accel/accel0': No such file or directory\nls: cannot access '/dev/dri': No such file or directory\n"
+    },
+    {
+      "id": "device-acl",
+      "status": "UNAVAILABLE",
+      "returncode": 1,
+      "error": "getfacl: /dev/accel/accel0: No such file or directory\n"
+    },
+    {
+      "id": "driver",
+      "status": "CAPTURED",
+      "returncode": 0,
+      "error": ""
+    },
+    {
+      "id": "packages",
+      "status": "PARTIAL",
+      "returncode": 1,
+      "error": "dpkg-query: no packages found matching *xdna*\ndpkg-query: no packages found matching python3.12*\n"
+    },
+    {
+      "id": "systemd-user",
+      "status": "UNAVAILABLE",
+      "returncode": 1,
+      "error": "Failed to connect to user scope bus via local transport: Operation not permitted (consider using --machine=<user>@.host --user to connect to bus of other user)\n"
+    },
+    {
+      "id": "systemd-user-unit",
+      "status": "UNAVAILABLE",
+      "returncode": 1,
+      "error": "Failed to connect to system scope bus via local transport: Operation not permitted (consider using --machine=<user>@.host --user to connect to bus of other user)\n"
+    },
+    {
+      "id": "kernel-npu-log",
+      "status": "CAPTURED",
+      "returncode": 0,
+      "error": ""
+    },
+    {
+      "id": "quicktest-elf",
+      "status": "CAPTURED",
+      "returncode": 0,
+      "error": ""
+    },
+    {
+      "id": "vaiml-elf",
+      "status": "CAPTURED",
+      "returncode": 0,
+      "error": ""
+    },
+    {
+      "id": "version-python3.12",
+      "status": "UNAVAILABLE",
+      "returncode": null,
+      "error": "[Errno 2] No such file or directory: 'python3.12'"
+    }
+  ],
+  "phase2_utc": "2026-10-30T13:46:19.114602+00:00",
+  "policy": {
+    "repository": "i-pp/ai-orchestration",
+    "orchestration_blob": "fc46d44e2d68fdcbadca143c91dec2097a7a732a",
+    "permissions_blob": "bdb98dba067f4a867b928e26da55720bb73fea42",
+    "roles_blob": "da452dcda9246a711d7f6263575162516038eaf8",
+    "evidence": "docs/policy-provenance.md"
+  },
+  "reproduction": {
+    "procedure": "docs/reproduction-procedure.md",
+    "audit": "docs/completeness-audit.md",
+    "status": "docs/reproducibility-status.md",
+    "verification_contract": "docs/verification-design.md",
+    "static_analysis": "artifacts/static-analysis.json",
+    "supplement": "artifacts/phase2-evidence.json",
+    "xrt_input_lock": "artifacts/xrt-packages.json",
+    "validation": "artifacts/phase2-validation.json",
+    "clean_install_validated": false,
+    "sdk_staging_integration_tested": false,
+    "new_probe_syntax_tested": true,
+    "new_probe_linked": false,
+    "new_probe_executed": false,
+    "new_model_numeric_comparison": false,
+    "license": "pending; LICENSE is a status notice, not a grant"
+  },
+  "astra_repair": {
+    "audit_commit": "70af3c9",
+    "audit": "docs/reviews/astra-final-review.md",
+    "response": "docs/reviews/astra-remediation.md",
+    "validation": "artifacts/astra-remediation-validation.json",
+    "historical_baseline": "artifacts/baselines/historical-cpp-sdk-1.8.0.json",
+    "new_acquisition_template": "artifacts/baselines/new-acquisition.template.json",
+    "host_dependencies": "artifacts/host-dependencies.json",
+    "static_declared_closure": "artifacts/cpp-static-preflight.json",
+    "publication_gates": "docs/publication-gates.md",
+    "historical_exact_restore": "BLOCKED: current selected hashes complete, but historical linkage/outer member paths/provenance and IRON native acceptance remain unverified",
+    "clean_install_validated": false,
+    "original_environments_modified": false,
+    "articles_modified_by_this_worker": false
+  },
+  "retained_input_followup": {
+    "inventory": "artifacts/remaining-inputs-inventory.json",
+    "explanation": "docs/remaining-inputs.md",
+    "large_sdk_files": "present; SDK outer/ORT/Peano current full hashes now recorded; broader inventory remains deferred",
+    "iron_wheels": "two pip HTTP cache containers fully hashed; selected WHEEL/METADATA matches only, no full installed-payload equivalence",
+    "llvm_tag_explanation": "observed filename py3-none; internal WHEEL cp310; pip selection and installed check inspect different tag sources. No forced historical install proven.",
+    "minimal_acceptance": "separate idle clean host, C++ staging/link/load and same-input CPU/VitisAI numerical comparison; no current execution",
+    "bulk_hash_download_or_device_run": true,
+    "selected_hash_record": "artifacts/collected-input-hashes.json",
+    "selected_hash_sums": "artifacts/collected-input-SHA256SUMS",
+    "current_cpp_baseline": "artifacts/baselines/new-collected-cpp-sdk-1.8.0-20261030.json",
+    "current_iron_baseline": "artifacts/baselines/new-collected-iron-wheels-20261030.json",
+    "hash_completed_utc": "2026-10-30T15:37:20.204381+00:00",
+    "historical_equivalence_proven": false,
+    "validation": "artifacts/collected-input-validation.json",
+    "selected_full_hash_run": true,
+    "download_run": false,
+    "device_run": false
+  }
+}

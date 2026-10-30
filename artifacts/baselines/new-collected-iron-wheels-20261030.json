@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "baseline_id": "new-collected-iron-wheels-20261030",
+  "identity_kind": "current-collected-local-inputs",
+  "completed_utc": "2026-10-30T15:37:20.204381+00:00",
+  "hash_record": "artifacts/collected-input-hashes.json",
+  "inputs": [
+    {
+      "filename": "llvm_aie-22.0.0.2026102001+4f5df13d-py3-none-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+      "source": "<HOME>/.cache/pip/http-v2/0/2/e/b/d/02ebd33a93c8fc63bbdd00eb69c35ab48182de3e3bdeae1e9ce1e670.body",
+      "sha256": "63c988f06bd7359737f881443b5166ade847efd1e5d27d57d8481ee406e62d41",
+      "size_bytes": 149617848,
+      "selected_metadata_comparison": [
+        {
+          "member": "llvm_aie-22.0.0.2026102001+4f5df13d.dist-info/METADATA",
+          "size_bytes": 570,
+          "sha256": "304b3ddc1c096f483d7b12b67b7492c9ec9dd0fabc3d29d6f104a9e903603e74",
+          "matches_installed": true,
+          "name_version_python": [
+            "Name: llvm-aie",
+            "Version: 22.0.0.2026102001+4f5df13d"
+          ]
+        },
+        {
+          "member": "llvm_aie-22.0.0.2026102001+4f5df13d.dist-info/WHEEL",
+          "size_bytes": 152,
+          "sha256": "185286d3321a818bdba68411ba1f9620b1f5f9fde935901baa4a2b908a35e749",
+          "matches_installed": true,
+          "text": "Wheel-Version: 1.0\nGenerator: setuptools (84.2.0)\nRoot-Is-Purelib: false\nTag: cp310-cp310-manylinux_2_27_x86_64\nTag: cp310-cp310-manylinux_2_28_x86_64"
+        }
+      ],
+      "full_payload_matches_installed": null,
+      "vendor_published_sha256": null,
+      "vendor_signature_verified": false
+    },
+    {
+      "filename": "mlir_aie-1.4.5.dev113+ge28f6dc-cp314-cp314-manylinux_2_35_x86_64.whl",
+      "source": "<HOME>/.cache/pip/http-v2/5/7/f/8/3/57f83ed74712c2dc678c49d9531e862b27b135c871949148e948306d.body",
+      "sha256": "7af231daa7b0f6be17c570674f8f038f8a868a99ae4356cb2692982ee282bb0a",
+      "size_bytes": 265463510,
+      "selected_metadata_comparison": [
+        {
+          "member": "mlir_aie/python/eudsl_python_extras-0.1.0.20261001.532+c60cea4.dist-info/METADATA",
+          "size_bytes": 750,
+          "sha256": "fc9069a170daf3ca132423b90865fcd201b84149c57c7e01f60318503fbc4df7",
+          "matches_installed": true,
+          "name_version_python": [
+            "Name: eudsl-python-extras",
+            "Version: 0.1.0.20261001.532+c60cea4",
+            "Requires-Python: >=3.10"
+          ]
+        },
+        {
+          "member": "mlir_aie/python/eudsl_python_extras-0.1.0.20261001.532+c60cea4.dist-info/WHEEL",
+          "size_bytes": 91,
+          "sha256": "61532836a2b3111b7ec23519c09df7c41180c27165fb872a6d8913b566b88ad1",
+          "matches_installed": true,
+          "text": "Wheel-Version: 1.0\nGenerator: setuptools (84.0.0)\nRoot-Is-Purelib: true\nTag: py3-none-any"
+        },
+        {
+          "member": "mlir_aie-1.4.5.dev113+ge28f6dc.dist-info/METADATA",
+          "size_bytes": 21188,
+          "sha256": "9e9642ae93350ab2397d3599f5e9cab133498756a547da60615d8dd0768feb54",
+          "matches_installed": true,
+          "name_version_python": [
+            "Name: mlir-aie",
+            "Version: 1.4.5.dev113+ge28f6dc",
+            "Requires-Python: >=3.11"
+          ]
+        },
+        {
+          "member": "mlir_aie-1.4.5.dev113+ge28f6dc.dist-info/WHEEL",
+          "size_bytes": 113,
+          "sha256": "a7c21393da9584d268e233abf45e421ca43eec411af443eef86920aa37c4528f",
+          "matches_installed": true,
+          "text": "Wheel-Version: 1.0\nGenerator: setuptools (84.0.0)\nRoot-Is-Purelib: false\nTag: cp314-cp314-manylinux_2_35_x86_64"
+        }
+      ],
+      "full_payload_matches_installed": null,
+      "vendor_published_sha256": null,
+      "vendor_signature_verified": false
+    }
+  ],
+  "historical_equivalence_proven": false,
+  "vendor_authenticity_verified": false,
+  "fresh_native_acceptance": "NOT_PERFORMED",
+  "compatibility_note": "LLVM-AIE filename py3-none, internal WHEEL cp310-cp310; full container hash does not resolve native compatibility or establish historical install method. MLIR-AIE filename/internal WHEEL cp314. Only selected WHEEL/METADATA equality with installed files was previously checked."
+}

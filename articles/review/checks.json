@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "checked_utc": "2026-10-30T14:03:02.584967+00:00",
+  "source_snapshot": "be01af5f4071915f08f5978aecc8e5123cd2431b",
+  "article": "articles/ryzen-ai-max-395-ubuntu-2604-npu-ja.md",
+  "article_sha256": "5b0a59824961b62ed8d5b1a4258751515312295f2d3eb7292f94a34d46f96f9f",
+  "initial_draft_sha256": "5d49c3b85c69e012140453ac9beeb54c82ba1c916066a686a0ccdc5774e7f14d",
+  "bytes": 33785,
+  "characters": 16335,
+  "lines": 306,
+  "frontmatter": {
+    "status": "PASS",
+    "title_characters": 57,
+    "published": false,
+    "chatgpt_topic": true
+  },
+  "chatgpt_disclosure_at_opening": true,
+  "markdown": {
+    "status": "PASS",
+    "parser": "markdown-it-py, installed local package",
+    "rendered_in_memory": true,
+    "h2_count": 17,
+    "tables": 4,
+    "code_fences": 12,
+    "relative_links": 21,
+    "broken_links": []
+  },
+  "bash_fences_syntax": [
+    {
+      "start_line": 53,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "start_line": 80,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "start_line": 270,
+      "exit_code": 0,
+      "stderr": ""
+    }
+  ],
+  "privacy_pattern_scan": {
+    "status": "PASS",
+    "hits": []
+  },
+  "language_lint": {
+    "noslop": "NOT_RUN: no installed local command or verified adapter found",
+    "textlint": "NOT_RUN: no installed local command found",
+    "slop-shield": "NOT_RUN: existing adapter source unverified",
+    "testlint-ja": "NOT_RUN: identity unresolved in existing editorial policy; not substituted"
+  },
+  "manual_editorial_cycles": 2,
+  "independent_technical_audit": "PENDING_ASTRA",
+  "device_execution": false,
+  "publication": false,
+  "body_commit": "858b567bebf8547ff12d0d9eca8cf8a04b077903",
+  "local_tool_versions": {
+    "markdown-it-py": "3.0.0",
+    "PyYAML": "6.0.3"
+  },
+  "language_lint_command_lookup": {
+    "noslop": null,
+    "textlint": null
+  },
+  "body_matches_commit": true,
+  "review_relative_links_broken": [],
+  "all_article_files_privacy_scan": {
+    "status": "PASS",
+    "hits": []
+  },
+  "diff_record_format": "unified diff with zero context; avoids whitespace-only context lines in a tracked diff file",
+  "git_diff_check": "PASS against source snapshot after correcting diff-record format; article unchanged"
+}

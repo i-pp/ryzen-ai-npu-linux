@@ -1,0 +1,347 @@
+{
+  "scope": "static inspection, no dynamic loading or execution",
+  "elf": {
+    "quicktest": {
+      "needed": [
+        "libonnxruntime.so.1",
+        "libstdc++.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "rpath": [],
+      "runpath": [
+        "<SDK>/cpp-test/sdk/onnxruntime/lib"
+      ],
+      "soname": [],
+      "size_bytes": 17120,
+      "sha256": "40774de6523ec45a60502cf02c0135e4c71a3fb2bfb207ee169fb518e31e66d4"
+    },
+    "ort": {
+      "needed": [
+        "libz.so.1",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-x86-64.so.2"
+      ],
+      "rpath": [],
+      "runpath": [
+        "$ORIGIN"
+      ],
+      "soname": [
+        "libonnxruntime.so.1"
+      ],
+      "size_bytes": 28316944,
+      "sha256": "b26e093d750d8c066ff4d3daebe986b37d949de542c453ccdb578db442265555"
+    },
+    "ep": {
+      "needed": [
+        "libxcompiler-mlir-e2e.so",
+        "libxcompiler-xcompiler-core.so.1",
+        "libxcompiler-core-without-symbol.so",
+        "libaiecompiler_client.so",
+        "libvaiml2.so",
+        "libdyn_dispatch_core.so",
+        "libxrt_coreutil.so.2",
+        "libuuid.so.1",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-x86-64.so.2"
+      ],
+      "rpath": [],
+      "runpath": [],
+      "soname": [
+        "libonnxruntime_vitisai_ep.so"
+      ],
+      "size_bytes": 71403752,
+      "sha256_status": "deferred above 64 MiB"
+    },
+    "dispatch": {
+      "needed": [
+        "libxrt_coreutil.so.2",
+        "libuuid.so.1",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-x86-64.so.2"
+      ],
+      "rpath": [],
+      "runpath": [],
+      "soname": [
+        "libdyn_dispatch_core.so"
+      ],
+      "size_bytes": 187806488,
+      "sha256_status": "deferred above 64 MiB"
+    },
+    "vaiml2": {
+      "needed": [
+        "libaiecompiler_client.so",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-x86-64.so.2"
+      ],
+      "rpath": [
+        "$ORIGIN/../lib"
+      ],
+      "runpath": [],
+      "soname": [
+        "libvaiml2.so"
+      ],
+      "size_bytes": 2769136,
+      "sha256": "38636c3b141b31bd0dcb73ae86307d4a256e2aa2da0765dc6711be4e1c4b8658"
+    },
+    "compiler": {
+      "needed": [
+        "libncurses.so.6",
+        "libtinfo.so.6",
+        "libz.so.1",
+        "libm.so.6",
+        "libzstd.so.1",
+        "libstdc++.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-x86-64.so.2"
+      ],
+      "rpath": [],
+      "runpath": [],
+      "soname": [
+        "libaiecompiler_client.so"
+      ],
+      "size_bytes": 223400960,
+      "sha256_status": "deferred above 64 MiB"
+    },
+    "xcompiler": {
+      "needed": [
+        "libxcompiler-xcompiler-core.so.1",
+        "libxcompiler-core-without-symbol.so",
+        "libaiecompiler_client.so",
+        "libvaiml2.so",
+        "libaie_codegen.so.3",
+        "libpeano-lib.so.21.0git",
+        "libncurses.so.6",
+        "libtinfo.so.6",
+        "libm.so.6",
+        "libzstd.so.1",
+        "libstdc++.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-x86-64.so.2"
+      ],
+      "rpath": [],
+      "runpath": [
+        "$ORIGIN:$ORIGIN/../../lnx64.o/tools/peano/lib:<vendor-build-path>:<vendor-build-path>:<vendor-build-path>:<vendor-build-path>:<vendor-build-path>:<vendor-build-path>:<vendor-build-path>:<vendor-build-path>:<vendor-build-path>:<vendor-build-path>:<vendor-build-path>:<vendor-build-path>:<vendor-build-path>:<vendor-build-path>"
+      ],
+      "soname": [
+        "libxcompiler-mlir-e2e.so"
+      ],
+      "size_bytes": 306756952,
+      "sha256_status": "deferred above 64 MiB"
+    },
+    "peano": {
+      "needed": [
+        "libm.so.6",
+        "libzstd.so.1",
+        "libstdc++.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-x86-64.so.2"
+      ],
+      "rpath": [],
+      "runpath": [
+        "$ORIGIN/../lib"
+      ],
+      "soname": [
+        "libpeano-lib.so.21.0git"
+      ],
+      "size_bytes": 186631968,
+      "sha256_status": "deferred above 64 MiB"
+    },
+    "system_coreutil": {
+      "needed": [
+        "libuuid.so.1",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-x86-64.so.2"
+      ],
+      "rpath": [],
+      "runpath": [],
+      "soname": [
+        "libxrt_coreutil.so.2"
+      ],
+      "size_bytes": 2286576,
+      "sha256": "5978885c0b8711a420b6d54817f47e933aa6f18b96ad1f786f312bec6e6bcc16"
+    },
+    "local_coreutil": {
+      "needed": [
+        "libuuid.so.1",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-x86-64.so.2"
+      ],
+      "rpath": [],
+      "runpath": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN/../../lib"
+      ],
+      "soname": [
+        "libxrt_coreutil.so.2"
+      ],
+      "size_bytes": 5790984,
+      "sha256": "acbc609939c35e9edc0aed3709a0b5bdc6d0b9e5f53e9e6d2e0a94100ada2e97"
+    },
+    "local_core": {
+      "needed": [
+        "libxrt_coreutil.so.2",
+        "libuuid.so.1",
+        "libstdc++.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "rpath": [],
+      "runpath": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN/../../lib"
+      ],
+      "soname": [
+        "libxrt_core.so.2"
+      ],
+      "size_bytes": 1852368,
+      "sha256": "48decc294dbf1672167a8468fee947b1a756893792905eb71d2bc1acceaa75ae"
+    },
+    "local_driver": {
+      "needed": [
+        "libxrt_core.so.2",
+        "libxrt_coreutil.so.2",
+        "libstdc++.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "rpath": [],
+      "runpath": [],
+      "soname": [
+        "libxrt_driver_xdna.so.2"
+      ],
+      "size_bytes": 783696,
+      "sha256": "f93fa0af14984dbd8105765e8ecd9847ab408eb770d2636aee6d31f8980601d8"
+    }
+  },
+  "xrt_namespace_imports": {
+    "ep": {
+      "count": 53,
+      "missing_system": [],
+      "missing_local": [],
+      "caveat": "unversioned name presence only; no C++ layout, semantics, dynamic lookup, plugin, or runtime compatibility proof"
+    },
+    "dispatch": {
+      "count": 61,
+      "missing_system": [],
+      "missing_local": [],
+      "caveat": "unversioned name presence only; no C++ layout, semantics, dynamic lookup, plugin, or runtime compatibility proof"
+    }
+  },
+  "model": {
+    "sha256": "7a78c7e85bac3a0681e3d2f77e69093a761e1c8f62f7fc65ff5ce3e1b82c5ba3",
+    "size_bytes": 23728543,
+    "ir_version": 7,
+    "producer": "vai_q_onnx",
+    "opsets": [
+      {
+        "domain": "",
+        "version": 13
+      },
+      {
+        "domain": "com.microsoft.nchwc",
+        "version": 1
+      },
+      {
+        "domain": "ai.onnx.ml",
+        "version": 3
+      },
+      {
+        "domain": "com.ms.internal.nhwc",
+        "version": 19
+      },
+      {
+        "domain": "ai.onnx.training",
+        "version": 1
+      },
+      {
+        "domain": "ai.onnx.preview.training",
+        "version": 1
+      },
+      {
+        "domain": "com.microsoft",
+        "version": 1
+      },
+      {
+        "domain": "com.microsoft.experimental",
+        "version": 1
+      },
+      {
+        "domain": "org.pytorch.aten",
+        "version": 1
+      },
+      {
+        "domain": "ai.onnx.contrib",
+        "version": 1
+      }
+    ],
+    "inputs": [
+      {
+        "name": "input",
+        "element_type": 1,
+        "shape": [
+          "batch_size",
+          3,
+          32,
+          32
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "output",
+        "element_type": 1,
+        "shape": [
+          "batch_size",
+          10
+        ]
+      }
+    ],
+    "top_level_node_count": 386,
+    "operators": {
+      "::Add": 16,
+      "::Constant": 1,
+      "::Conv": 53,
+      "::DequantizeLinear": 185,
+      "::Flatten": 1,
+      "::Gemm": 2,
+      "::GlobalAveragePool": 1,
+      "::MaxPool": 1,
+      "::Mul": 1,
+      "::QuantizeLinear": 75,
+      "::Relu": 50
+    },
+    "initializers": 478,
+    "external_initializers": 0,
+    "scope": "top-level wire metadata only; no schema/shape/weight validation or execution"
+  },
+  "headers": {
+    "onnxruntime_c_api.h": {
+      "sha256": "c4ed26d7bbc7b649c1c38622424d88dfb1a28e3d3594c5f1456cf458814e8381",
+      "size_bytes": 392016
+    },
+    "onnxruntime_ep_c_api.h": {
+      "sha256": "f65ac849718cabe3ff4902698dd2de643c3b3dbe0010242b2b0407548e7ee00c",
+      "size_bytes": 149810
+    }
+  }
+}

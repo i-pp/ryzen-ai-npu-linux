@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "validated_utc": "2026-10-30T14:53:58.007055+00:00",
+  "base_audit_commit": "70af3c9",
+  "unit_fixture_tests": {
+    "run": 39,
+    "passed": 39,
+    "skipped": 0,
+    "scope": "synthetic staging/build mocks plus standalone result-writer C++ fixture; no ORT or device execution"
+  },
+  "python_ast": "PASS",
+  "bash_syntax": "PASS",
+  "json": "PASS",
+  "full_probe_cpp_syntax": "PASS, -fsyntax-only; no SDK link/load",
+  "static_candidate_closure": {
+    "objects": 23,
+    "edges": 109,
+    "static_status": "PASS",
+    "dynamic_loader_abi": "SKIP"
+  },
+  "preservation": {
+    "selected_original_hashes_unchanged": 15,
+    "original_private_source_copies_unchanged": 44,
+    "mlir_saved_diff_unchanged": true,
+    "immutable_astra_review_unchanged": true,
+    "actual_repo_private_work_created": false
+  },
+  "publication_locator_checks": {
+    "tree": {
+      "exit_code": 1,
+      "status": "FAIL",
+      "current_tree_matches": [
+        {
+          "path": "articles/review/editorial-review.md",
+          "kind": "private_library_locator",
+          "line": 18
+        }
+      ],
+      "history_match_commit_count": 0
+    },
+    "history": {
+      "exit_code": 1,
+      "status": "FAIL",
+      "current_tree_matches": [
+        {
+          "path": "articles/review/editorial-review.md",
+          "kind": "private_library_locator",
+          "line": 18
+        }
+      ],
+      "history_match_commit_count": 3
+    }
+  },
+  "articles_worktree_changes_seen": [],
+  "sdk_runtime_executed": false,
+  "npu_gpu_tested": false,
+  "clean_install_validated": false,
+  "historical_input_blocker_resolved": false,
+  "history_rewritten": false,
+  "owned_technical_tree_checks": {
+    "relative_markdown_links": "PASS",
+    "known_private_source_id_tokens": "PASS",
+    "personal_home_and_selected_credential_patterns": "PASS",
+    "unexpected_large_or_binary_raw_files": "PASS"
+  },
+  "writer_followups": [
+    {
+      "path": "articles/review/editorial-review.md",
+      "line_at_capture": 18,
+      "action": "replace private Library source identifier with REQ-001"
+    },
+    {
+      "path": "articles/ryzen-ai-max-395-ubuntu-2604-npu-ja.md",
+      "line_at_capture": 275,
+      "action": "replace removed standalone hash flags with --baseline and baseline identity explanation"
+    }
+  ],
+  "source_sha256": {
+    "scripts/build-probe.py": "c19d641ce0ea66ab251deeb24b5f6ab7da821adccff116c6834f5635ce186ddb",
+    "scripts/stage-cpp-sdk.py": "942a02708f671af278b825ee5defabd7bd6ba386d3a2e48ba55d6990ef6361bf",
+    "scripts/preflight-cpp.py": "442cd9607d3bb7bceee2b1843eae37c1e392c4280b81c5ea753a03be57fdf03a",
+    "scripts/check-public-tree.py": "174b5f140876955c26324f104c527ac6a80c77236c459ad612ad2fa3035dce20",
+    "src/inference-probe.cpp": "9c34cd073815db6b50ae5fea9c191f8c421438bdac2c0f26fd578c60e952dd90",
+    "src/exclusive-output.hpp": "d54cd1a1d8de0dadda9e008b14038c30e105af61a917e53b463c7e5923ff2cb2"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "baseline_id": "new-collected-cpp-sdk-1.8.0-20261030",
+  "identity_kind": "new-acquisition",
+  "review_status": "reviewed",
+  "acquisition_notes": "No new download. Retained ORT and SDK Peano containers were fully hashed on 2026-10-30 at 32 MiB/s maximum with 1 MiB buffer; source data unchanged. Current local byte identity only. Historical equality, exact outer member relationships and vendor authenticity are unproven. quicktest/header/model hashes are reused from earlier local evidence. Source URLs below are official acquisition references, not recovered fetch attestations.",
+  "artifacts": {
+    "onnxruntime": {
+      "filename": "onnxruntime.tar.gz",
+      "sha256": "51a091ce47b87a1a5a0c7df9df5ad30fc05a9797758fdda7703f891d9ce8199f",
+      "source_url": "https://account.amd.com/en/forms/downloads/xef.html?filename=ryzen_ai-1.8.0.tgz",
+      "payload_root": "onnxruntime",
+      "size_bytes": 914703902,
+      "hash_source": "current full-file read",
+      "source_url_status": "official acquisition reference only; actual historical fetch not attested"
+    },
+    "sdk_peano": {
+      "filename": "llvm_aie-1.8.0-py3-none-linux_x86_64.whl",
+      "sha256": "35700efe0706324959f7b6f159250094d20157baed14345fb8d5bb2be0475308",
+      "source_url": "https://account.amd.com/en/forms/downloads/xef.html?filename=ryzen_ai-1.8.0.tgz",
+      "payload_member": "lnx64.o/tools/peano/lib/libpeano-lib.so.21.0git",
+      "payload_size_bytes": 186631968,
+      "size_bytes": 1474908981,
+      "hash_source": "current full-file read",
+      "source_url_status": "official acquisition reference only; actual historical fetch not attested"
+    },
+    "quicktest": {
+      "filename": "quicktest.tar.gz",
+      "sha256": "0d0328b4e30f277c5267d5524e89a7f3f8bbcc2cbf50878ecc0130ef10b9db18",
+      "source_url": "https://account.amd.com/en/forms/downloads/xef.html?filename=ryzen_ai-1.8.0.tgz",
+      "payload_member": "quicktest/test_model.onnx",
+      "hash_source": "existing E059 local SHA-256; not reread in this five-input pass",
+      "source_url_status": "official acquisition reference only; actual historical fetch not attested"
+    }
+  },
+  "headers": {
+    "onnxruntime_c_api.h": "c4ed26d7bbc7b649c1c38622424d88dfb1a28e3d3594c5f1456cf458814e8381",
+    "onnxruntime_ep_c_api.h": "f65ac849718cabe3ff4902698dd2de643c3b3dbe0010242b2b0407548e7ee00c"
+  },
+  "model_sha256": "7a78c7e85bac3a0681e3d2f77e69093a761e1c8f62f7fc65ff5ce3e1b82c5ba3",
+  "notes": "Frozen retained-input baseline for a separately identified future C++ trial. new-acquisition is the existing helper identity branch, not a claim that a fresh download occurred. No staging, link/load, native execution or clean-host validation was performed.",
+  "collection_kind": "retained-local-inputs",
+  "reviewed_utc": "2026-10-30T15:40:59.479140+00:00",
+  "review_scope": "operator review of current byte pins and existing subset contracts only; not independent audit or native acceptance",
+  "current_collection": "artifacts/collected-input-hashes.json",
+  "historical_equivalence_proven": false,
+  "vendor_authenticity_verified": false,
+  "distribution": {
+    "filename": "ryzen_ai-1.8.0.tgz",
+    "sha256": "7532d511532dd8842995bc8dc2edd8a45fbf261312ea9abe8dd01b4d502ac98d",
+    "size_bytes": 7819506855,
+    "source_url": "https://account.amd.com/en/forms/downloads/xef.html?filename=ryzen_ai-1.8.0.tgz",
+    "source_url_status": "official reference, not authenticated acquisition receipt",
+    "member_relationship_to_artifacts_verified": false
+  }
+}

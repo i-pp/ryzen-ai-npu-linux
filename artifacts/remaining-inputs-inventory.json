@@ -1,0 +1,582 @@
+{
+  "schema_version": 1,
+  "captured_utc": "2026-10-30T15:01:11.842182+00:00",
+  "scope": "metadata and selected small dist-info files only; no SDK imports/device/bulk hash/download",
+  "local_inputs": [
+    {
+      "source": "<DOWNLOADS>/ryzen_ai-1.8.0.tgz",
+      "present": true,
+      "size_bytes": 7819506855,
+      "mtime_utc": "2026-10-30T10:44:43.219079+00:00",
+      "sha256_action": "not read in this metadata-only follow-up",
+      "evidence_id": "E018",
+      "known_sha256": null,
+      "matches_phase1_size_mtime": true,
+      "classification": "present; full current-file SHA-256 now recorded; historical equality unproven",
+      "current_collected_sha256": "7532d511532dd8842995bc8dc2edd8a45fbf261312ea9abe8dd01b4d502ac98d",
+      "current_sha256_record": "artifacts/collected-input-hashes.json"
+    },
+    {
+      "source": "<WORKSPACE>/ryzen-ai-1.8.0/onnxruntime.tar.gz",
+      "present": true,
+      "size_bytes": 914703902,
+      "mtime_utc": "2026-07-20T20:44:45+00:00",
+      "sha256_action": "not read in this metadata-only follow-up",
+      "evidence_id": "E056",
+      "known_sha256": null,
+      "matches_phase1_size_mtime": true,
+      "classification": "present; full current-file SHA-256 now recorded; historical equality unproven",
+      "current_collected_sha256": "51a091ce47b87a1a5a0c7df9df5ad30fc05a9797758fdda7703f891d9ce8199f",
+      "current_sha256_record": "artifacts/collected-input-hashes.json"
+    },
+    {
+      "source": "<WORKSPACE>/ryzen-ai-1.8.0/llvm_aie-1.8.0-py3-none-linux_x86_64.whl",
+      "present": true,
+      "size_bytes": 1474908981,
+      "mtime_utc": "2026-07-20T20:44:29+00:00",
+      "sha256_action": "not read in this metadata-only follow-up",
+      "evidence_id": "E052",
+      "known_sha256": null,
+      "matches_phase1_size_mtime": true,
+      "classification": "present; full current-file SHA-256 now recorded; historical equality unproven",
+      "current_collected_sha256": "35700efe0706324959f7b6f159250094d20157baed14345fb8d5bb2be0475308",
+      "current_sha256_record": "artifacts/collected-input-hashes.json"
+    },
+    {
+      "source": "<WORKSPACE>/ryzen-ai-1.8.0/deployment.tar.gz",
+      "present": true,
+      "size_bytes": 914704018,
+      "mtime_utc": "2026-07-20T20:44:43+00:00",
+      "sha256_action": "not read in this metadata-only follow-up",
+      "evidence_id": "E043",
+      "known_sha256": null,
+      "matches_phase1_size_mtime": true,
+      "classification": "present; complete hash deferred, not lost"
+    },
+    {
+      "source": "<WORKSPACE>/ryzen-ai-1.8.0/flexml-1.8.0-py3-none-linux_x86_64.whl",
+      "present": true,
+      "size_bytes": 1516336986,
+      "mtime_utc": "2026-07-22T05:46:09+00:00",
+      "sha256_action": "not read in this metadata-only follow-up",
+      "evidence_id": "E046",
+      "known_sha256": null,
+      "matches_phase1_size_mtime": true,
+      "classification": "present; complete hash deferred, not lost"
+    },
+    {
+      "source": "<WORKSPACE>/ryzen-ai-1.8.0/voe-1.8.0-py3-none-linux_x86_64.whl",
+      "present": true,
+      "size_bytes": 1057478208,
+      "mtime_utc": "2026-07-20T20:44:40+00:00",
+      "sha256_action": "not read in this metadata-only follow-up",
+      "evidence_id": "E071",
+      "known_sha256": null,
+      "matches_phase1_size_mtime": true,
+      "classification": "present; complete hash deferred, not lost"
+    },
+    {
+      "source": "<WORKSPACE>/ryzen-ai-1.8.0/quicktest.tar.gz",
+      "present": true,
+      "size_bytes": 15853394,
+      "mtime_utc": "2026-07-20T20:44:41+00:00",
+      "sha256_action": "not read in this metadata-only follow-up",
+      "evidence_id": "E059",
+      "known_sha256": "0d0328b4e30f277c5267d5524e89a7f3f8bbcc2cbf50878ecc0130ef10b9db18",
+      "matches_phase1_size_mtime": true,
+      "classification": "present and already hashed"
+    },
+    {
+      "source": "<DOWNLOADS>/RAI_1.8_Linux_NPU_XRT.zip",
+      "present": true,
+      "size_bytes": 90016137,
+      "mtime_utc": "2026-10-30T11:41:24.160049+00:00",
+      "sha256_action": "not read in this metadata-only follow-up",
+      "evidence_id": "E017",
+      "known_sha256": "ea37ce2ff46ae20e64a081c38fc45b3bae183e488f293543c811f4c05186d2df",
+      "matches_phase1_size_mtime": true,
+      "classification": "present and already hashed"
+    }
+  ],
+  "iron_metadata": [
+    {
+      "distribution": "mlir_aie",
+      "version": "1.4.5.dev113+ge28f6dc",
+      "directory": "<WORKSPACE>/mlir-aie/ironenv/lib/python3.14/site-packages/mlir_aie-1.4.5.dev113+ge28f6dc.dist-info",
+      "small_files": {
+        "INSTALLER": {
+          "present": true,
+          "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+          "size_bytes": 4,
+          "text": "pip"
+        },
+        "direct_url.json": {
+          "present": false
+        },
+        "WHEEL": {
+          "present": true,
+          "sha256": "a7c21393da9584d268e233abf45e421ca43eec411af443eef86920aa37c4528f",
+          "size_bytes": 113,
+          "text": "Wheel-Version: 1.0\nGenerator: setuptools (84.0.0)\nRoot-Is-Purelib: false\nTag: cp314-cp314-manylinux_2_35_x86_64"
+        },
+        "REQUESTED": {
+          "present": true,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size_bytes": 0
+        }
+      },
+      "RECORD_present": true,
+      "RECORD_size_bytes": 152060
+    },
+    {
+      "distribution": "llvm_aie",
+      "version": "22.0.0.2026102001+4f5df13d",
+      "directory": "<WORKSPACE>/mlir-aie/ironenv/lib/python3.14/site-packages/llvm_aie-22.0.0.2026102001+4f5df13d.dist-info",
+      "small_files": {
+        "INSTALLER": {
+          "present": true,
+          "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+          "size_bytes": 4,
+          "text": "pip"
+        },
+        "direct_url.json": {
+          "present": false
+        },
+        "WHEEL": {
+          "present": true,
+          "sha256": "185286d3321a818bdba68411ba1f9620b1f5f9fde935901baa4a2b908a35e749",
+          "size_bytes": 152,
+          "text": "Wheel-Version: 1.0\nGenerator: setuptools (84.2.0)\nRoot-Is-Purelib: false\nTag: cp310-cp310-manylinux_2_27_x86_64\nTag: cp310-cp310-manylinux_2_28_x86_64"
+        },
+        "REQUESTED": {
+          "present": true,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size_bytes": 0
+        }
+      },
+      "RECORD_present": true,
+      "RECORD_size_bytes": 185114
+    }
+  ],
+  "bounded_searches": [
+    {
+      "label": "Downloads top-level",
+      "root": "<DOWNLOADS>",
+      "max_depth": 0,
+      "entry_cap": 3000,
+      "examined_entries": 11,
+      "complete_within_depth": true,
+      "matches": [],
+      "status": "bounded metadata scan complete"
+    },
+    {
+      "label": "SDK top-level",
+      "root": "<WORKSPACE>/ryzen-ai-1.8.0",
+      "max_depth": 0,
+      "entry_cap": 3000,
+      "examined_entries": 34,
+      "complete_within_depth": true,
+      "matches": [
+        {
+          "path": "<WORKSPACE>/ryzen-ai-1.8.0/llvm_aie-1.8.0-py3-none-linux_x86_64.whl",
+          "size_bytes": 1474908981
+        }
+      ],
+      "status": "bounded metadata scan complete"
+    },
+    {
+      "label": "SDK cpp-test shallow",
+      "root": "<WORKSPACE>/ryzen-ai-1.8.0/cpp-test",
+      "max_depth": 1,
+      "entry_cap": 3000,
+      "examined_entries": 15,
+      "complete_within_depth": true,
+      "matches": [],
+      "status": "bounded metadata scan complete"
+    },
+    {
+      "label": "MLIR top-level",
+      "root": "<WORKSPACE>/mlir-aie",
+      "max_depth": 0,
+      "entry_cap": 3000,
+      "examined_entries": 36,
+      "complete_within_depth": true,
+      "matches": [],
+      "status": "bounded metadata scan complete"
+    },
+    {
+      "label": "IRON 00_memcpy subtree",
+      "root": "<WORKSPACE>/mlir-aie/programming_examples/getting_started/00_memcpy",
+      "max_depth": 2,
+      "entry_cap": 3000,
+      "examined_entries": 3,
+      "complete_within_depth": true,
+      "matches": [
+        {
+          "path": "<WORKSPACE>/mlir-aie/programming_examples/getting_started/00_memcpy/memcpy.py",
+          "size_bytes": 1929
+        }
+      ],
+      "status": "bounded metadata scan complete"
+    },
+    {
+      "label": "tmp top-level",
+      "root": "/tmp",
+      "max_depth": 0,
+      "entry_cap": 3000,
+      "examined_entries": 1719,
+      "complete_within_depth": true,
+      "matches": [
+        {
+          "path": "/tmp/ryzenai-xrt225.log",
+          "size_bytes": 177241
+        },
+        {
+          "path": "/tmp/ryzenai-quicktest.strace",
+          "size_bytes": 25497
+        },
+        {
+          "path": "/tmp/ryzenai-quicktest.log",
+          "size_bytes": 138948
+        }
+      ],
+      "status": "bounded metadata scan complete"
+    },
+    {
+      "label": "pip wheel cache",
+      "root": "<HOME>/.cache/pip/wheels",
+      "max_depth": 6,
+      "entry_cap": 3000,
+      "examined_entries": 0,
+      "complete_within_depth": true,
+      "matches": [],
+      "status": "root not present"
+    },
+    {
+      "label": "uv wheel index",
+      "root": "<HOME>/.cache/uv/wheels-v5",
+      "max_depth": 4,
+      "entry_cap": 3000,
+      "examined_entries": 0,
+      "complete_within_depth": true,
+      "matches": [],
+      "status": "root not present"
+    }
+  ],
+  "unsearched": [
+    "full installed-payload comparison and acquisition URL attestation; cached wheel containers fully hashed in selected follow-up",
+    "uv archive payload cache; not needed to rediscover the two now-located candidates",
+    "outer SDK members beyond first large payload",
+    "other home/workspace trees and external disks",
+    "omitted conversation attachments",
+    "Codex/session history"
+  ],
+  "available_optional_hash_tools": {
+    "nice": true,
+    "ionice": true,
+    "pv": false
+  },
+  "cache_root_metadata": [
+    {
+      "root": "<HOME>/.cache/pip",
+      "present": true,
+      "top_level_directory_names": [
+        "http-v2",
+        "selfcheck"
+      ]
+    },
+    {
+      "root": "<HOME>/.cache/uv",
+      "present": true,
+      "top_level_directory_names": [
+        "sdists-v10",
+        "interpreter-v4",
+        "builds-v0",
+        "archive-v0",
+        "simple-v27",
+        "git-v1",
+        "environments-v2",
+        "wheels-v7"
+      ]
+    }
+  ],
+  "bounded_sdk_outer_archive_headers": {
+    "source": "<DOWNLOADS>/ryzen_ai-1.8.0.tgz",
+    "compressed_read_cap": 1048576,
+    "large_payload_stop_bytes": 262144,
+    "members": [
+      {
+        "name": ".",
+        "size_bytes": 0,
+        "type": "other"
+      },
+      {
+        "name": "./vitis_mllib-1.8.0-py3-none-linux_x86_64.whl",
+        "size_bytes": 9589467,
+        "type": "file"
+      }
+    ],
+    "whole_archive_hashed": false,
+    "stop_reason": "stopped before traversing a large member payload",
+    "compressed_bytes_read": 10240,
+    "scope": "early headers/selected small installer only; not a complete member inventory",
+    "whole_archive_hash_followup": "artifacts/collected-input-hashes.json; container fully hashed, later member paths still unenumerated"
+  },
+  "uv_wheels_v7_bounded_search": {
+    "root": "<HOME>/.cache/uv/wheels-v7",
+    "entry_cap": 3000,
+    "max_depth": 5,
+    "examined_entries": 401,
+    "matched_package_paths": [],
+    "scope": "filenames/index metadata only; no archive payload traversal",
+    "status": "bounded filename scan complete"
+  },
+  "pip_http_metadata_bounded_search": {
+    "root": "<HOME>/.cache/pip/http-v2",
+    "entry_cap": 5000,
+    "metadata_read_cap_bytes": 1048576,
+    "examined_entries": 1371,
+    "metadata_bytes_read": 361432,
+    "matching_metadata": [
+      {
+        "metadata_path": "<HOME>/.cache/pip/http-v2/0/2/e/b/d/02ebd33a93c8fc63bbdd00eb69c35ab48182de3e3bdeae1e9ce1e670",
+        "wheel_filename_tokens": [
+          "llvm_aie-22.0.0.2026102001+4f5df13d-py3-none-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl"
+        ],
+        "body_path": "<HOME>/.cache/pip/http-v2/0/2/e/b/d/02ebd33a93c8fc63bbdd00eb69c35ab48182de3e3bdeae1e9ce1e670.body",
+        "body_present": true,
+        "body_size_bytes": 149617848
+      },
+      {
+        "metadata_path": "<HOME>/.cache/pip/http-v2/5/7/f/8/3/57f83ed74712c2dc678c49d9531e862b27b135c871949148e948306d",
+        "wheel_filename_tokens": [
+          "mlir_aie-1.4.5.dev113+ge28f6dc-cp314-cp314-manylinux_2_35_x86_64.whl"
+        ],
+        "body_path": "<HOME>/.cache/pip/http-v2/5/7/f/8/3/57f83ed74712c2dc678c49d9531e862b27b135c871949148e948306d.body",
+        "body_present": true,
+        "body_size_bytes": 265463510
+      }
+    ],
+    "body_bytes_read": 0,
+    "scope": "small non-body cache metadata only; no HTTP body reads",
+    "status": "bounded metadata scan complete"
+  },
+  "recovered_iron_wheel_cache_candidates": [
+    {
+      "body_path": "<HOME>/.cache/pip/http-v2/0/2/e/b/d/02ebd33a93c8fc63bbdd00eb69c35ab48182de3e3bdeae1e9ce1e670.body",
+      "size_bytes": 149617848,
+      "observed_filename_tokens": [
+        "llvm_aie-22.0.0.2026102001+4f5df13d-py3-none-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl"
+      ],
+      "whole_wheel_sha256": "63c988f06bd7359737f881443b5166ade847efd1e5d27d57d8481ee406e62d41",
+      "selected_members": [
+        {
+          "member": "llvm_aie-22.0.0.2026102001+4f5df13d.dist-info/METADATA",
+          "size_bytes": 570,
+          "sha256": "304b3ddc1c096f483d7b12b67b7492c9ec9dd0fabc3d29d6f104a9e903603e74",
+          "matches_installed": true,
+          "name_version_python": [
+            "Name: llvm-aie",
+            "Version: 22.0.0.2026102001+4f5df13d"
+          ]
+        },
+        {
+          "member": "llvm_aie-22.0.0.2026102001+4f5df13d.dist-info/WHEEL",
+          "size_bytes": 152,
+          "sha256": "185286d3321a818bdba68411ba1f9620b1f5f9fde935901baa4a2b908a35e749",
+          "matches_installed": true,
+          "text": "Wheel-Version: 1.0\nGenerator: setuptools (84.2.0)\nRoot-Is-Purelib: false\nTag: cp310-cp310-manylinux_2_27_x86_64\nTag: cp310-cp310-manylinux_2_28_x86_64"
+        }
+      ],
+      "zip_entry_count": 1832,
+      "body_metadata_bytes_read": 173312,
+      "whole_wheel_sha256_at_metadata_snapshot": "DEFERRED; complete body not read",
+      "current_sha256_record": "artifacts/collected-input-hashes.json"
+    },
+    {
+      "body_path": "<HOME>/.cache/pip/http-v2/5/7/f/8/3/57f83ed74712c2dc678c49d9531e862b27b135c871949148e948306d.body",
+      "size_bytes": 265463510,
+      "observed_filename_tokens": [
+        "mlir_aie-1.4.5.dev113+ge28f6dc-cp314-cp314-manylinux_2_35_x86_64.whl"
+      ],
+      "whole_wheel_sha256": "7af231daa7b0f6be17c570674f8f038f8a868a99ae4356cb2692982ee282bb0a",
+      "selected_members": [
+        {
+          "member": "mlir_aie/python/eudsl_python_extras-0.1.0.20261001.532+c60cea4.dist-info/METADATA",
+          "size_bytes": 750,
+          "sha256": "fc9069a170daf3ca132423b90865fcd201b84149c57c7e01f60318503fbc4df7",
+          "matches_installed": true,
+          "name_version_python": [
+            "Name: eudsl-python-extras",
+            "Version: 0.1.0.20261001.532+c60cea4",
+            "Requires-Python: >=3.10"
+          ]
+        },
+        {
+          "member": "mlir_aie/python/eudsl_python_extras-0.1.0.20261001.532+c60cea4.dist-info/WHEEL",
+          "size_bytes": 91,
+          "sha256": "61532836a2b3111b7ec23519c09df7c41180c27165fb872a6d8913b566b88ad1",
+          "matches_installed": true,
+          "text": "Wheel-Version: 1.0\nGenerator: setuptools (84.0.0)\nRoot-Is-Purelib: true\nTag: py3-none-any"
+        },
+        {
+          "member": "mlir_aie-1.4.5.dev113+ge28f6dc.dist-info/METADATA",
+          "size_bytes": 21188,
+          "sha256": "9e9642ae93350ab2397d3599f5e9cab133498756a547da60615d8dd0768feb54",
+          "matches_installed": true,
+          "name_version_python": [
+            "Name: mlir-aie",
+            "Version: 1.4.5.dev113+ge28f6dc",
+            "Requires-Python: >=3.11"
+          ]
+        },
+        {
+          "member": "mlir_aie-1.4.5.dev113+ge28f6dc.dist-info/WHEEL",
+          "size_bytes": 113,
+          "sha256": "a7c21393da9584d268e233abf45e421ca43eec411af443eef86920aa37c4528f",
+          "matches_installed": true,
+          "text": "Wheel-Version: 1.0\nGenerator: setuptools (84.0.0)\nRoot-Is-Purelib: false\nTag: cp314-cp314-manylinux_2_35_x86_64"
+        }
+      ],
+      "zip_entry_count": 1290,
+      "body_metadata_bytes_read": 133013,
+      "whole_wheel_sha256_at_metadata_snapshot": "DEFERRED; complete body not read",
+      "current_sha256_record": "artifacts/collected-input-hashes.json"
+    }
+  ],
+  "pip_static_source_checks": {
+    "source_version": "26.2.2 per preserved distribution metadata",
+    "files": [
+      {
+        "source": "<WORKSPACE>/mlir-aie/ironenv/lib/python3.14/site-packages/pip/_internal/models/wheel.py",
+        "sha256": "d5275f0ef37b00b4ec6f267d10eb0dcb518f8ab3f59fa1231f2ccfad9c8b4a1f",
+        "size_bytes": 2920
+      },
+      {
+        "source": "<WORKSPACE>/mlir-aie/ironenv/lib/python3.14/site-packages/pip/_internal/index/package_finder.py",
+        "sha256": "46858ae6b3e439c98e7625845e19e4f5a6850e06a3e10104ef415e42892a65fe",
+        "size_bytes": 43149
+      },
+      {
+        "source": "<WORKSPACE>/mlir-aie/ironenv/lib/python3.14/site-packages/pip/_internal/operations/check.py",
+        "sha256": "93b9938cb6f9c996e2758c3c36df6fbbbfeed4bd5e90b3b350409e378a9c36c0",
+        "size_bytes": 5891
+      }
+    ],
+    "selection": "Wheel(link.filename) and filename parsed tags used by candidate support check",
+    "installed_check": "check_unsupported reads installed WHEEL Tag metadata",
+    "interpretation": "filename py3-none versus internal cp310 explains a plausible normal-selection / later-warning path; exact historical command and native compatibility not proven"
+  },
+  "other_manifest_deferred_files": [
+    {
+      "id": "E018",
+      "source": "<DOWNLOADS>/ryzen_ai-1.8.0.tgz",
+      "size_bytes": 7819506855,
+      "classification": "preserved local file; full hash deferred",
+      "present_now": true,
+      "size_bytes_now": 7819506855,
+      "matches_phase1_size_mtime": true
+    },
+    {
+      "id": "E031",
+      "source": "<WORKSPACE>/ryzen-ai-1.8.0/cpp-test/peano/libpeano-lib.so",
+      "size_bytes": 186631968,
+      "classification": "preserved local file; full hash deferred",
+      "present_now": true,
+      "size_bytes_now": 186631968,
+      "matches_phase1_size_mtime": true
+    },
+    {
+      "id": "E032",
+      "source": "<WORKSPACE>/ryzen-ai-1.8.0/cpp-test/peano/libpeano-lib.so.21.0git",
+      "size_bytes": 186631968,
+      "classification": "preserved local file; full hash deferred",
+      "present_now": true,
+      "size_bytes_now": 186631968,
+      "matches_phase1_size_mtime": true
+    },
+    {
+      "id": "E043",
+      "source": "<WORKSPACE>/ryzen-ai-1.8.0/deployment.tar.gz",
+      "size_bytes": 914704018,
+      "classification": "preserved local file; full hash deferred",
+      "present_now": true,
+      "size_bytes_now": 914704018,
+      "matches_phase1_size_mtime": true
+    },
+    {
+      "id": "E046",
+      "source": "<WORKSPACE>/ryzen-ai-1.8.0/flexml-1.8.0-py3-none-linux_x86_64.whl",
+      "size_bytes": 1516336986,
+      "classification": "preserved local file; full hash deferred",
+      "present_now": true,
+      "size_bytes_now": 1516336986,
+      "matches_phase1_size_mtime": true
+    },
+    {
+      "id": "E052",
+      "source": "<WORKSPACE>/ryzen-ai-1.8.0/llvm_aie-1.8.0-py3-none-linux_x86_64.whl",
+      "size_bytes": 1474908981,
+      "classification": "preserved local file; full hash deferred",
+      "present_now": true,
+      "size_bytes_now": 1474908981,
+      "matches_phase1_size_mtime": true
+    },
+    {
+      "id": "E056",
+      "source": "<WORKSPACE>/ryzen-ai-1.8.0/onnxruntime.tar.gz",
+      "size_bytes": 914703902,
+      "classification": "preserved local file; full hash deferred",
+      "present_now": true,
+      "size_bytes_now": 914703902,
+      "matches_phase1_size_mtime": true
+    },
+    {
+      "id": "E063",
+      "source": "<WORKSPACE>/ryzen-ai-1.8.0/ryzenai_dynamic_dispatch-1.8.0-py3-none-linux_x86_64.whl",
+      "size_bytes": 497486282,
+      "classification": "preserved local file; full hash deferred",
+      "present_now": true,
+      "size_bytes_now": 497486282,
+      "matches_phase1_size_mtime": true
+    },
+    {
+      "id": "E069",
+      "source": "<WORKSPACE>/ryzen-ai-1.8.0/vitis_aie_essentials-1.8.0-py3-none-linux_x86_64.whl",
+      "size_bytes": 1251408118,
+      "classification": "preserved local file; full hash deferred",
+      "present_now": true,
+      "size_bytes_now": 1251408118,
+      "matches_phase1_size_mtime": true
+    },
+    {
+      "id": "E071",
+      "source": "<WORKSPACE>/ryzen-ai-1.8.0/voe-1.8.0-py3-none-linux_x86_64.whl",
+      "size_bytes": 1057478208,
+      "classification": "preserved local file; full hash deferred",
+      "present_now": true,
+      "size_bytes_now": 1057478208,
+      "matches_phase1_size_mtime": true
+    }
+  ],
+  "classification_summary": {
+    "sdk_distributions": "SDK outer/ORT/SDK Peano current full hashes complete; broader inventory hashes deferred; historical linkage/source-member comparison unverified",
+    "iron_wheels": "two cached containers now fully hashed; selected installed WHEEL/METADATA match only; exact historical acquisition and native acceptance unverified",
+    "missing_logs": "original memcpy attachment/standalone output not recovered; no deletion/loss established",
+    "selected_whole_hash_run": true,
+    "download_run": false
+  },
+  "current_hash_followup": {
+    "record": "artifacts/collected-input-hashes.json",
+    "completed_utc": "2026-10-30T15:37:20.204381+00:00",
+    "scope": "exactly five current retained input files; no re-download or extraction",
+    "total_bytes": 10624201096,
+    "historical_equivalence_proven": false
+  },
+  "classification_summary_at_metadata_snapshot": {
+    "sdk_distributions": "preserved local files, full hashing deferred; no loss established",
+    "iron_wheels": "two pip HTTP cache containers located; installed WHEEL/METADATA match; complete wheel hashes deferred",
+    "missing_logs": "memcpy attachment/standalone output not recovered; no claim it was deleted",
+    "whole_hash_or_download_run": false
+  }
+}

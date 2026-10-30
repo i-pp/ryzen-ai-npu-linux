@@ -1,0 +1,405 @@
+{
+  "schema_version": 1,
+  "captured_utc": "2026-10-30T14:35:22.439994+00:00",
+  "source": "read-only dpkg database and cached APT metadata; no update/install/download",
+  "repository_definitions": [
+    "URIs: http://jp.archive.ubuntu.com/ubuntu/",
+    "Suites: resolute resolute-updates resolute-backports",
+    "Components: main restricted universe multiverse",
+    "URIs: http://security.ubuntu.com/ubuntu/",
+    "Suites: resolute-security",
+    "Components: main restricted universe multiverse"
+  ],
+  "packages": [
+    {
+      "package": "bash",
+      "observed_version": "5.3-2ubuntu1",
+      "architecture": "amd64",
+      "cached_archive": {
+        "Package": "bash",
+        "Architecture": "amd64",
+        "Version": "5.3-2ubuntu1",
+        "Filename": "pool/main/b/bash/bash_5.3-2ubuntu1_amd64.deb",
+        "SHA256": "82d4aba3490578089d399921bf6444ad848468a23f2cb37262625b28e3615a76"
+      },
+      "present_in_cached_index": true
+    },
+    {
+      "package": "coreutils",
+      "observed_version": "9.5-1ubuntu2+0.0.0~ubuntu25",
+      "architecture": "all",
+      "cached_archive": {
+        "Package": "coreutils",
+        "Source": "coreutils-from (0.0.0~ubuntu25)",
+        "Architecture": "all",
+        "Version": "9.5-1ubuntu2+0.0.0~ubuntu25",
+        "Filename": "pool/main/c/coreutils-from/coreutils_9.5-1ubuntu2+0.0.0~ubuntu25_all.deb",
+        "SHA256": "048eed9011f2dab8260beec1246994118e5406b740c81020e4d7f556ea32fcdf"
+      },
+      "present_in_cached_index": true
+    },
+    {
+      "package": "python3",
+      "observed_version": "3.14.3-0ubuntu2",
+      "architecture": "amd64",
+      "cached_archive": {
+        "Package": "python3",
+        "Source": "python3-defaults",
+        "Architecture": "amd64",
+        "Version": "3.14.3-0ubuntu2",
+        "Filename": "pool/main/p/python3-defaults/python3_3.14.3-0ubuntu2_amd64.deb",
+        "SHA256": "1ff88ad587f9e52e9f333ab00ae0babea93ac5222fc6909039c4190affe1d574"
+      },
+      "present_in_cached_index": true
+    },
+    {
+      "package": "python3.14",
+      "observed_version": "3.14.4-1ubuntu0.2",
+      "architecture": "amd64",
+      "cached_archive": {
+        "Package": "python3.14",
+        "Architecture": "amd64",
+        "Version": "3.14.4-1ubuntu0.2",
+        "Filename": "pool/main/p/python3.14/python3.14_3.14.4-1ubuntu0.2_amd64.deb",
+        "SHA256": "780c308c47d8afcbb7d339f0023350e7cf60c1a37e9572a1f88774cc18f60526"
+      },
+      "present_in_cached_index": true
+    },
+    {
+      "package": "binutils",
+      "observed_version": "2.46-3ubuntu2",
+      "architecture": "amd64",
+      "cached_archive": {
+        "Package": "binutils",
+        "Architecture": "amd64",
+        "Version": "2.46-3ubuntu2",
+        "Filename": "pool/main/b/binutils/binutils_2.46-3ubuntu2_amd64.deb",
+        "SHA256": "d14fc7bf644b495083f77c99ff168f1a2215c8b3b7ad5202e0345dc1092002b0"
+      },
+      "present_in_cached_index": true
+    },
+    {
+      "package": "dpkg",
+      "observed_version": "1.23.7ubuntu1",
+      "architecture": "amd64",
+      "cached_archive": {
+        "Package": "dpkg",
+        "Architecture": "amd64",
+        "Version": "1.23.7ubuntu1",
+        "Filename": "pool/main/d/dpkg/dpkg_1.23.7ubuntu1_amd64.deb",
+        "SHA256": "6e0ee5877c0d27b0d8fbe36387035e8f03074eed055112595ab2e85ac8b5711e"
+      },
+      "present_in_cached_index": true
+    },
+    {
+      "package": "g++",
+      "observed_version": "4:15.2.0-5ubuntu1",
+      "architecture": "amd64",
+      "cached_archive": {
+        "Package": "g++",
+        "Source": "gcc-defaults (1.230ubuntu1)",
+        "Architecture": "amd64",
+        "Version": "4:15.2.0-5ubuntu1",
+        "Filename": "pool/main/g/gcc-defaults/g++_15.2.0-5ubuntu1_amd64.deb",
+        "SHA256": "2be84461c2f47fd7ce2cfea2e35d775d0e30582879bf1c0e80a1c22f92a2cdac"
+      },
+      "present_in_cached_index": true
+    },
+    {
+      "package": "g++-15",
+      "observed_version": "15.2.0-16ubuntu1",
+      "architecture": "amd64",
+      "cached_archive": {
+        "Package": "g++-15",
+        "Source": "gcc-15",
+        "Architecture": "amd64",
+        "Version": "15.2.0-16ubuntu1",
+        "Filename": "pool/main/g/gcc-15/g++-15_15.2.0-16ubuntu1_amd64.deb",
+        "SHA256": "cb7771861d821e48d38253f2397217920d5cf8020ed9de8372a625d080dcc6be"
+      },
+      "present_in_cached_index": true
+    },
+    {
+      "package": "libc6-dev:amd64",
+      "observed_version": "2.43-2ubuntu2.4",
+      "architecture": "amd64",
+      "cached_archive": {
+        "Package": "libc6-dev",
+        "Source": "glibc",
+        "Architecture": "amd64",
+        "Version": "2.43-2ubuntu2.4",
+        "Filename": "pool/main/g/glibc/libc6-dev_2.43-2ubuntu2.4_amd64.deb",
+        "SHA256": "17bb816a65a25c3416854eef7e9cc6d9a3761f45bad0d44e49bc676b7bab1769"
+      },
+      "present_in_cached_index": true
+    },
+    {
+      "package": "libc-bin",
+      "observed_version": "2.43-2ubuntu2.4",
+      "architecture": "amd64",
+      "cached_archive": {
+        "Package": "libc-bin",
+        "Source": "glibc",
+        "Architecture": "amd64",
+        "Version": "2.43-2ubuntu2.4",
+        "Filename": "pool/main/g/glibc/libc-bin_2.43-2ubuntu2.4_amd64.deb",
+        "SHA256": "bc4f50a0aebbb348598749c291a3742f9485d94b044715d382388607b9159a1b"
+      },
+      "present_in_cached_index": true
+    },
+    {
+      "package": "libc6:amd64",
+      "observed_version": "2.43-2ubuntu2.4",
+      "architecture": "amd64",
+      "cached_archive": {
+        "Package": "libc6",
+        "Source": "glibc",
+        "Architecture": "amd64",
+        "Version": "2.43-2ubuntu2.4",
+        "Filename": "pool/main/g/glibc/libc6_2.43-2ubuntu2.4_amd64.deb",
+        "SHA256": "a613b457f3ff9c84ebd28af8a05afdec22605ad9aed87c71e3a6ae5170aeb9ca"
+      },
+      "present_in_cached_index": true
+    },
+    {
+      "package": "libgcc-s1:amd64",
+      "observed_version": "16-20260322-1ubuntu1",
+      "architecture": "amd64",
+      "cached_archive": {
+        "Package": "libgcc-s1",
+        "Source": "gcc-16",
+        "Architecture": "amd64",
+        "Version": "16-20260322-1ubuntu1",
+        "Filename": "pool/main/g/gcc-16/libgcc-s1_16-20260322-1ubuntu1_amd64.deb",
+        "SHA256": "2fb4d81c14fdf34251639ae82f5181f9f98480ea16125d535571ac1be9db3065"
+      },
+      "present_in_cached_index": true
+    },
+    {
+      "package": "libstdc++6:amd64",
+      "observed_version": "16-20260322-1ubuntu1",
+      "architecture": "amd64",
+      "cached_archive": {
+        "Package": "libstdc++6",
+        "Source": "gcc-16",
+        "Architecture": "amd64",
+        "Version": "16-20260322-1ubuntu1",
+        "Filename": "pool/main/g/gcc-16/libstdc++6_16-20260322-1ubuntu1_amd64.deb",
+        "SHA256": "a32b9ad585e39bdc7bd15d1eae6293461e6d466859a1dd2f7862d1e40f89b9d8"
+      },
+      "present_in_cached_index": true
+    },
+    {
+      "package": "libuuid1:amd64",
+      "observed_version": "2.41.3-3ubuntu2.2",
+      "architecture": "amd64",
+      "cached_archive": {
+        "Package": "libuuid1",
+        "Source": "util-linux",
+        "Architecture": "amd64",
+        "Version": "2.41.3-3ubuntu2.2",
+        "Filename": "pool/main/u/util-linux/libuuid1_2.41.3-3ubuntu2.2_amd64.deb",
+        "SHA256": "77e7078fbdb994e3c9c84ce6fc464f0451580d7f0b46c8770d0189b46959ad43"
+      },
+      "present_in_cached_index": true
+    },
+    {
+      "package": "zlib1g:amd64",
+      "observed_version": "1:1.3.dfsg+really1.3.1-1ubuntu3.2",
+      "architecture": "amd64",
+      "cached_archive": {
+        "Package": "zlib1g",
+        "Source": "zlib",
+        "Architecture": "amd64",
+        "Version": "1:1.3.dfsg+really1.3.1-1ubuntu3.2",
+        "Filename": "pool/main/z/zlib/zlib1g_1.3.dfsg+really1.3.1-1ubuntu3.2_amd64.deb",
+        "SHA256": "10084666f747247550c3e82f9a12cbfd9184c19241a42eb34d8893ecb8e03b35"
+      },
+      "present_in_cached_index": true
+    },
+    {
+      "package": "libzstd1:amd64",
+      "observed_version": "1.5.7+dfsg-3",
+      "architecture": "amd64",
+      "cached_archive": {
+        "Package": "libzstd1",
+        "Source": "libzstd",
+        "Architecture": "amd64",
+        "Version": "1.5.7+dfsg-3",
+        "Filename": "pool/main/libz/libzstd/libzstd1_1.5.7+dfsg-3_amd64.deb",
+        "SHA256": "34365d611ccf1f717f90a92fbe52ed96ae1829ab9be363c68a83563322797f8f"
+      },
+      "present_in_cached_index": true
+    },
+    {
+      "package": "libncurses6:amd64",
+      "observed_version": "6.6+20251231-1",
+      "architecture": "amd64",
+      "cached_archive": {
+        "Package": "libncurses6",
+        "Source": "ncurses",
+        "Architecture": "amd64",
+        "Version": "6.6+20251231-1",
+        "Filename": "pool/main/n/ncurses/libncurses6_6.6+20251231-1_amd64.deb",
+        "SHA256": "ef354764c18dd6034325c255b636f108dc6d4f5e64d4cafb22975e76421f3d28"
+      },
+      "present_in_cached_index": true
+    },
+    {
+      "package": "libtinfo6:amd64",
+      "observed_version": "6.6+20251231-1",
+      "architecture": "amd64",
+      "cached_archive": {
+        "Package": "libtinfo6",
+        "Source": "ncurses",
+        "Architecture": "amd64",
+        "Version": "6.6+20251231-1",
+        "Filename": "pool/main/n/ncurses/libtinfo6_6.6+20251231-1_amd64.deb",
+        "SHA256": "42705a701a98d84c203c6f96f08c6fd6a29a1ef978683e1ffbf0e27535b20ddb"
+      },
+      "present_in_cached_index": true
+    },
+    {
+      "package": "linux-image-7.0.0-42-generic",
+      "observed_version": "7.0.0-42.42",
+      "architecture": "amd64",
+      "cached_archive": {
+        "Package": "linux-image-7.0.0-42-generic",
+        "Source": "linux-signed",
+        "Architecture": "amd64",
+        "Version": "7.0.0-42.42",
+        "Filename": "pool/main/l/linux-signed/linux-image-7.0.0-42-generic_7.0.0-42.42_amd64.deb",
+        "SHA256": "179381704964d6b79c8d2bab2f5d51d8679cb13e9bf51a3293e28f90b708c96e"
+      },
+      "present_in_cached_index": true
+    },
+    {
+      "package": "linux-modules-7.0.0-42-generic",
+      "observed_version": "7.0.0-42.42",
+      "architecture": "amd64",
+      "cached_archive": {
+        "Package": "linux-modules-7.0.0-42-generic",
+        "Source": "linux",
+        "Architecture": "amd64",
+        "Version": "7.0.0-42.42",
+        "Filename": "pool/main/l/linux/linux-modules-7.0.0-42-generic_7.0.0-42.42_amd64.deb",
+        "SHA256": "af173ab8a9a18ec6f4f450963de4c73ccef4c61bd5c1ab20f7a085b7ca15c9d6"
+      },
+      "present_in_cached_index": true
+    },
+    {
+      "package": "linux-firmware-amd-misc",
+      "observed_version": "20260319.git217ca6e4-0ubuntu1.1",
+      "architecture": "all",
+      "cached_archive": {
+        "Package": "linux-firmware-amd-misc",
+        "Architecture": "all",
+        "Version": "20260319.git217ca6e4-0ubuntu1.1",
+        "Filename": "pool/main/l/linux-firmware-amd-misc/linux-firmware-amd-misc_20260319.git217ca6e4-0ubuntu1.1_all.deb",
+        "SHA256": "1989580cb43a7499fefa3059cbbd9396faf7f3a52b8658f8bdbaf29c79c446ec"
+      },
+      "present_in_cached_index": true
+    }
+  ],
+  "selected_soname_providers": {
+    "libz.so.1": {
+      "candidate": "<SDK>/cpp-test/sdk/onnxruntime/lib/libz.so.1.3.2",
+      "provider": "staged vendor subset; not a host package in this selection"
+    },
+    "libstdc++.so.6": {
+      "candidate": "<SDK>/cpp-test/sdk/onnxruntime/lib/libstdc++.so.6",
+      "provider": "staged vendor subset; not a host package in this selection"
+    },
+    "libm.so.6": {
+      "candidate": "/usr/lib/x86_64-linux-gnu/libm.so.6",
+      "package": "libc6:amd64",
+      "version": "2.43-2ubuntu2.4"
+    },
+    "libgcc_s.so.1": {
+      "candidate": "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+      "package": "libgcc-s1:amd64",
+      "version": "16-20260322-1ubuntu1"
+    },
+    "libc.so.6": {
+      "candidate": "/usr/lib/x86_64-linux-gnu/libc.so.6",
+      "package": "libc6:amd64",
+      "version": "2.43-2ubuntu2.4"
+    },
+    "ld-linux-x86-64.so.2": {
+      "candidate": "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+      "package": "libc6:amd64",
+      "version": "2.43-2ubuntu2.4"
+    },
+    "libxcompiler-mlir-e2e.so": {
+      "candidate": "<SDK>/cpp-test/sdk/onnxruntime/lib/libxcompiler-mlir-e2e.so",
+      "provider": "staged vendor subset; not a host package in this selection"
+    },
+    "libxcompiler-xcompiler-core.so.1": {
+      "candidate": "<SDK>/cpp-test/sdk/onnxruntime/lib/libxcompiler-xcompiler-core.so.1.6.0",
+      "provider": "staged vendor subset; not a host package in this selection"
+    },
+    "libxcompiler-core-without-symbol.so": {
+      "candidate": "<SDK>/cpp-test/sdk/onnxruntime/lib/libxcompiler-core-without-symbol.so",
+      "provider": "staged vendor subset; not a host package in this selection"
+    },
+    "libaiecompiler_client.so": {
+      "candidate": "<SDK>/cpp-test/sdk/onnxruntime/lib/libaiecompiler_client.so",
+      "provider": "staged vendor subset; not a host package in this selection"
+    },
+    "libvaiml2.so": {
+      "candidate": "<SDK>/cpp-test/sdk/onnxruntime/lib/libvaiml2.so",
+      "provider": "staged vendor subset; not a host package in this selection"
+    },
+    "libdyn_dispatch_core.so": {
+      "candidate": "<SDK>/cpp-test/sdk/onnxruntime/lib/libdyn_dispatch_core.so",
+      "provider": "staged vendor subset; not a host package in this selection"
+    },
+    "libxrt_coreutil.so.2": {
+      "candidate": "<XRT>/lib/libxrt_coreutil.so.2.25.37",
+      "provider": "staged vendor subset; not a host package in this selection"
+    },
+    "libuuid.so.1": {
+      "candidate": "/usr/lib/x86_64-linux-gnu/libuuid.so.1.3.0",
+      "package": "libuuid1:amd64",
+      "version": "2.41.3-3ubuntu2.2"
+    },
+    "libzstd.so.1": {
+      "candidate": "/usr/lib/x86_64-linux-gnu/libzstd.so.1.5.7",
+      "package": "libzstd1:amd64",
+      "version": "1.5.7+dfsg-3"
+    },
+    "libxrt_core.so.2": {
+      "candidate": "<XRT>/lib/libxrt_core.so.2.25.37",
+      "provider": "staged vendor subset; not a host package in this selection"
+    },
+    "libaie_codegen.so.3": {
+      "candidate": "<SDK>/cpp-test/sdk/onnxruntime/lib/libaie_codegen.so.3.5",
+      "provider": "staged vendor subset; not a host package in this selection"
+    },
+    "libpeano-lib.so.21.0git": {
+      "candidate": "<SDK>/cpp-test/peano/libpeano-lib.so.21.0git",
+      "provider": "staged vendor subset; not a host package in this selection"
+    },
+    "libncurses.so.6": {
+      "candidate": "/usr/lib/x86_64-linux-gnu/libncurses.so.6.6",
+      "package": "libncurses6:amd64",
+      "version": "6.6+20251231-1"
+    },
+    "libtinfo.so.6": {
+      "candidate": "/usr/lib/x86_64-linux-gnu/libtinfo.so.6.6",
+      "package": "libtinfo6:amd64",
+      "version": "6.6+20251231-1"
+    }
+  },
+  "kernel_driver": {
+    "module_path": "/lib/modules/7.0.0-42-generic/kernel/drivers/accel/amdxdna/amdxdna.ko.zst",
+    "package_owner": "linux-modules-7.0.0-42-generic: /usr/lib/modules/7.0.0-42-generic/kernel/drivers/accel/amdxdna/amdxdna.ko.zst",
+    "archival_download_tested": false
+  },
+  "firmware": {
+    "path": "/usr/lib/firmware/amdnpu/17f0_11/npu.sbin.1.1.2.65.zst",
+    "package_owner": "linux-firmware-amd-misc: /usr/lib/firmware/amdnpu/17f0_11/npu.sbin.1.1.2.65.zst",
+    "archival_download_tested": false
+  },
+  "scope": "observed package/declared ELF identity; not a clean-host validation or a minimal-package proof"
+}

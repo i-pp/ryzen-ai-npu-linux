@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "source_id": "HIST-CONV",
+  "access": "private collector handoff; public sanitized index only",
+  "evidence": [
+    {
+      "id": "HIST-C001",
+      "utc_time": "09:26\u201309:27",
+      "kind": "U",
+      "sanitized_summary": "U: amdxdna, render membership and node already present; initial kernel 7.0.0-38; memlock 8192 shell units; XRT initially absent",
+      "source_access": "parent collector handoff; private source map; not independently re-fetched"
+    },
+    {
+      "id": "HIST-C002",
+      "utc_time": "09:28:55",
+      "kind": "U",
+      "sanitized_summary": "U: 64 MiB mapping failed with errno -11; XRT 2.21.75",
+      "source_access": "parent collector handoff; private source map; not independently re-fetched"
+    },
+    {
+      "id": "HIST-C003",
+      "utc_time": "09:31:02",
+      "kind": "U",
+      "sanitized_summary": "U: root plus unlimited memlock examination detects NPU",
+      "source_access": "parent collector handoff; private source map; not independently re-fetched"
+    },
+    {
+      "id": "HIST-C004",
+      "utc_time": "09:32:44",
+      "kind": "U",
+      "sanitized_summary": "U: root/Performance validation all PASS; GEMM 51.0 TOPS, latency 50.0 us, throughput 74904.0 op/s",
+      "source_access": "parent collector handoff; private source map; not independently re-fetched"
+    },
+    {
+      "id": "HIST-C005",
+      "utc_time": "09:33:33",
+      "kind": "U",
+      "sanitized_summary": "U: ordinary-user attempt to raise own hard limit to 128 MiB fails with EPERM",
+      "source_access": "parent collector handoff; private source map; not independently re-fetched"
+    },
+    {
+      "id": "HIST-C006",
+      "utc_time": "09:43\u201309:44",
+      "kind": "U",
+      "sanitized_summary": "U: kernel now 7.0.0-42; shell 1 GiB; user/Default validation all PASS, 51.0 TOPS, 46.0 us, 76330.0 op/s",
+      "source_access": "parent collector handoff; private source map; not independently re-fetched"
+    },
+    {
+      "id": "HIST-C007",
+      "utc_time": "09:47\u201309:48",
+      "kind": "U",
+      "sanitized_summary": "U: actual shell/manager/child service limits and displayed unit settings differed; manager actual limit was already 1 GiB",
+      "source_access": "parent collector handoff; private source map; not independently re-fetched"
+    },
+    {
+      "id": "HIST-C008",
+      "utc_time": "09:51:50",
+      "kind": "U",
+      "sanitized_summary": "U: correct system-manager `user@.service` drop-in created with 1G, daemon-reload, unit show reports 1 GiB",
+      "source_access": "parent collector handoff; private source map; not independently re-fetched"
+    },
+    {
+      "id": "HIST-C009",
+      "utc_time": "10:04\u201310:11",
+      "kind": "U",
+      "sanitized_summary": "U: MLIR installer rejects missing Python 3.12 and has an explicit version guard; changing only PYTHON would not suffice",
+      "source_access": "parent collector handoff; private source map; not independently re-fetched"
+    },
+    {
+      "id": "HIST-C010",
+      "utc_time": "10:17\u201310:18",
+      "kind": "U",
+      "sanitized_summary": "U: IRON Python 3.14.4, mlir-aie/llvm-aie versions, NumPy 2.5.4, successful aie import; pip check still reports llvm-aie platform warning",
+      "source_access": "parent collector handoff; private source map; not independently re-fetched"
+    },
+    {
+      "id": "HIST-C011",
+      "utc_time": "10:20\u201310:22",
+      "kind": "U",
+      "sanitized_summary": "U: CPUOnlyTensor/Unsupported device; cp314 pyxrt available to system Python but hidden from ironenv",
+      "source_access": "parent collector handoff; private source map; not independently re-fetched"
+    },
+    {
+      "id": "HIST-C012",
+      "utc_time": "10:23:53",
+      "kind": "A",
+      "sanitized_summary": "A only: assistant reads memcpy PASS, 80.19 GB/s, NPU 1673.8 us, dispatch 1737.5 us, end-to-end 1849.0 us and DMA BD warnings; preceding U body empty",
+      "source_access": "parent collector handoff; private source map; not independently re-fetched"
+    },
+    {
+      "id": "HIST-C013",
+      "utc_time": "10:25\u201310:26",
+      "kind": "U",
+      "sanitized_summary": "U: SAXPY and vector_reduce_max print PASS",
+      "source_access": "parent collector handoff; private source map; not independently re-fetched"
+    },
+    {
+      "id": "HIST-C014",
+      "utc_time": "11:01\u201311:05",
+      "kind": "U",
+      "sanitized_summary": "U: SDK Python 3.14 import fails on executable-stack requirement; after ELF flag change, fails on `_PyThreadState_UncheckedGet`",
+      "source_access": "parent collector handoff; private source map; not independently re-fetched"
+    },
+    {
+      "id": "HIST-C015",
+      "utc_time": "11:06:18",
+      "kind": "U",
+      "sanitized_summary": "U: Python 3.12/venv APT candidates absent; no later U proof of 3.12 provisioning",
+      "source_access": "parent collector handoff; private source map; not independently re-fetched"
+    },
+    {
+      "id": "HIST-C016",
+      "utc_time": "11:11\u201311:14",
+      "kind": "U",
+      "sanitized_summary": "U: C API header, then EP header, permit provider enumeration; registration initially fails until an OrtEnv/logger exists",
+      "source_access": "parent collector handoff; private source map; not independently re-fetched"
+    },
+    {
+      "id": "HIST-C017",
+      "utc_time": "11:17\u201311:23",
+      "kind": "U",
+      "sanitized_summary": "U: compiler dependency, then SDK Peano missing; Peano extracted from SDK llvm_aie wheel, EP registration succeeds",
+      "source_access": "parent collector handoff; private source map; not independently re-fetched"
+    },
+    {
+      "id": "HIST-C018",
+      "utc_time": "11:29\u201311:38",
+      "kind": "U/A",
+      "sanitized_summary": "U/A: system XRT is present but EP is compile-only; A proposes driver-detection-stub hypothesis",
+      "source_access": "parent collector handoff; private source map; not independently re-fetched"
+    },
+    {
+      "id": "HIST-C019",
+      "utc_time": "11:44:41",
+      "kind": "U",
+      "sanitized_summary": "U: base/npu/plugin DEB payloads extracted locally, rather than installed into system dpkg",
+      "source_access": "parent collector handoff; private source map; not independently re-fetched"
+    },
+    {
+      "id": "HIST-C020",
+      "utc_time": "11:45:28",
+      "kind": "U",
+      "sanitized_summary": "U: selected local XRT, SDK/Peano path; loader initialization and inference/quicktest PASS",
+      "source_access": "parent collector handoff; private source map; not independently re-fetched"
+    }
+  ]
+}
