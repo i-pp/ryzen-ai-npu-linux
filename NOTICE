@@ -1,0 +1,19 @@
+Ryzen AI NPU on Linux research tooling
+
+SPDX-FileCopyrightText: 2026 I-plusplus Inc.
+SPDX-License-Identifier: LicenseRef-KOL-v1
+
+The project-authored scripts, standalone probe and fixture source, tests,
+documentation, articles, configuration and sanitized evidence summaries in this
+repository are offered under KISS Open License Version 1.0. This declaration
+covers only rights owned or authorized by the respective contributors. It does
+not grant rights in vendor material described or quoted by research evidence.
+
+AMD SDK, XRT, IRON, LLVM-AIE, ONNX Runtime, firmware, model weights, vendor
+archives and wheels retain their separate terms and are not distributed here.
+Names, links, hashes and observations identify external inputs, not redistribution
+permission or a claim of compatibility. No model or hardware acceptance is implied.
+
+The original private-backup and fresh-history descriptions remain historical
+provenance. This license selection does not publish excluded material or imply
+that independent clean-host or numerical validation has been completed.
